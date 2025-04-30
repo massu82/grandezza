@@ -2,9 +2,11 @@
 
 namespace Database\Seeders;
 
-use App\Models\User;
-// use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use App\Models\User;
+use Database\Seeders\CategoriasSeeder;
+use Database\Seeders\ProductoSeeder;
+
 class DatabaseSeeder extends Seeder
 {
     /**
@@ -12,14 +14,17 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        // User::factory(10)->create();
-        $this->call(ProductoSeeder::class);
-        $this->call(CategoriasSeeder::class);
+        // Llamar a otros seeders
+        $this->call([
+            CategoriasSeeder::class,
+            ProductoSeeder::class,
+        ]);
 
+        // Crear un usuario manualmente
         User::factory()->create([
             'name' => 'Andres Massuttier',
             'email' => 'andres@m-studio.com.mx',
-            'password' => bcrypt('<PASSWORD>'),
+            'password' => bcrypt('tu_contraseña_segura'), // Cámbialo por una contraseña real
         ]);
     }
 }
