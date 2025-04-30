@@ -16,15 +16,15 @@ class DatabaseSeeder extends Seeder
     {
         // Llamar a otros seeders
         $this->call([
-            CategoriasSeeder::class,
             ProductoSeeder::class,
+            CategoriasSeeder::class,
         ]);
 
         // Crear un usuario manualmente
         User::factory()->create([
             'name' => 'Andres Massuttier',
             'email' => 'andres@m-studio.com.mx',
-            'password' => bcrypt('tu_contraseña_segura'), // Cámbialo por una contraseña real
+            'password' => bcrypt('delDuero1'), // Cámbialo por una contraseña real
         ]);
     }
 }
