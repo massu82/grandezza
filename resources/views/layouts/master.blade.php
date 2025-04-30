@@ -166,17 +166,17 @@
                             <div class="cart-dropdown">
                                 <table>
                                     <tr>
-                                        <td class="product-thumb"><a href="#"><img src="images/cart-hover-1.png"
+                                        <td class="product-thumb"><a href="#"><img src="/images/producto/01.webp" height="75"
                                                                                    alt="cart-hover"/></a></td>
-                                        <td><a title="Red Cotton Top" href="#">Red Cotton Top</a></td>
+                                        <td><a title="Red Cotton Top" href="#">Campo azul</a></td>
                                         <td>x1</td>
                                         <td>$92.00</td>
                                         <td><a title="close" href="#"><i class="fa fa-close"></i></a></td>
                                     </tr>
                                     <tr>
-                                        <td class="product-thumb"><a href="#"><img src="images/cart-hover-2.png"
+                                        <td class="product-thumb"><a href="#"><img src="/images/producto/02.webp" height="75"
                                                                                    alt="cart-hover"/></a></td>
-                                        <td><a title="Red Cotton Top" href="#">Red Cotton Top</a></td>
+                                        <td><a title="Red Cotton Top" href="#">Torres 10</a></td>
                                         <td>x1</td>
                                         <td>$92.00</td>
                                         <td><a title="close" href="#"><i class="fa fa-close"></i></a></td>
@@ -187,8 +187,8 @@
                                     <p><span>Total</span> $160.00</p>
                                 </div>
                                 <div class="cart-button">
-                                    <a title="Add to cart" href="#">add to cart</a>
-                                    <a title="Checkout" href="#">Checkout</a>
+                                    <a title="Add to cart" href="#">Agregar al carro</a>
+                                    <a title="Checkout" href="#">Pagar</a>
                                 </div>
                             </div>
                         </div>
@@ -213,40 +213,31 @@
                     </button>
                 </div>
                 <div class="collapse navbar-collapse" id="navbar">
-                    <ul class="nav navbar-nav">
-                        <li class="nav-item active"><a class="nav-link active" title="Home"
-                                                       href="/">Inicio</a></li>
 
-                        <li class="nav-item dropdown">
-                            <a title="Shop" href="#" class="nav-link dropdown-toggle"
-                               data-bs-toggle="dropdown">Licores y Destilados</a>
-                            <ul class="dropdown-menu">
-                                <li><a title="product" class="dropdown-item" href="03_product.html">product</a></li>
-                                <li><a title="Single product" class="dropdown-item"
-                                       href="04_single_product.html">single product</a></li>
-                                <li><a title="Single product" class="dropdown-item"
-                                       href="04_single_product-2.html">single product 2</a></li>
-                                <li><a title="Shopping cart" class="dropdown-item"
-                                       href="06_shopping_cart.html">shopping cart</a></li>
-                            </ul>
+                    <ul class="nav navbar-nav">
+                        @foreach ($categorias as $categoria)
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
+                                    {{ $categoria->nombre }}
+                                </a>
+
+                                @if ($categoria->children->count())
+                                    <ul class="dropdown-menu">
+                                        @foreach ($categoria->children as $subcategoria)
+                                            <li>
+                                                <a class="dropdown-item" href="#">
+                                                    {{ $subcategoria->nombre }}
+                                                </a>
+                                            </li>
+                                        @endforeach
+                                    </ul>
+                                @endif
+                            </li>
+                        @endforeach
+                        <li class="nav-item"><a class="nav-link" title="Blog" href="#eventos">Eventos</a></li>
+                        <li class="nav-item"><a class="nav-link" title="About Us" href="#l">Sucursales</a>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a title="Shop" href="#" class="nav-link dropdown-toggle"
-                               data-bs-toggle="dropdown">Vinos</a>
-                            <ul class="dropdown-menu">
-                                <li><a title="product" class="dropdown-item" href="03_product.html">product</a></li>
-                                <li><a title="Single product" class="dropdown-item"
-                                       href="04_single_product.html">single product</a></li>
-                                <li><a title="Single product" class="dropdown-item"
-                                       href="04_single_product-2.html">single product 2</a></li>
-                                <li><a title="Shopping cart" class="dropdown-item"
-                                       href="06_shopping_cart.html">shopping cart</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item"><a class="nav-link" title="Blog" href="#">Eventos</a></li>
-                        <li class="nav-item"><a class="nav-link" title="About Us" href="#l">Acerca de nosotros</a>
-                        </li>
-                        <li class="nav-item"><a class="nav-link" title="Contact us" href="#">Contacto</a></li>
+                        <li class="nav-item"><a class="nav-link" title="Contact us" href="#">Concierge</a></li>
                     </ul>
                 </div><!--/.nav-collapse -->
             </nav>
@@ -265,65 +256,17 @@
     <div id="add-banner-section" class="add-banner-section bottom-shadow">
         <!-- container -->
         <div class="container">
-            <a title="Add-banner" href="#"><img src="images/add-banner-2.jpg" alt="add-banner"/></a>
+            <a title="Add-banner" href="#"><img src="images/promo.webp" alt="add-banner"/></a>
         </div><!-- container /- -->
     </div><!-- Add Banner /- -->
-
-    <!-- Our Partner -->
-    <div id="our-partner-section" class="our-partner-section bottom-shadow">
-        <!-- container -->
-        <div class="container">
-            <!-- Section Header -->
-            <div class="section-header">
-                <h3>Partners with us</h3>
-                <p>Nam ac egestas est. Mauris et pulvinar risus, at tincidunt lorem. Maecenas tristique sit amet
-                    odio sit amet aliquet. Quisque a pharetra quam. Sed in ultrices diam, eget sodales ligula. Sed
-                    ut tincidunt lacus.</p>
-            </div><!-- Section Header /- -->
-            <!-- Owl Carousel -->
-            <div id="our-partner" class="owl-carousel owl-theme our-partner">
-                <div class="item">
-                    <a title="Partner" href="#" class="partner-box">
-                        <img src="images/partner/partner-1.png" alt="partner-1"/>
-                    </a>
-                </div>
-                <div class="item">
-                    <a title="Partner" href="#" class="partner-box">
-                        <img src="images/partner/partner-2.png" alt="partner-1"/>
-                    </a>
-                </div>
-                <div class="item">
-                    <a title="Partner" href="#" class="partner-box">
-                        <img src="images/partner/partner-3.png" alt="partner-1"/>
-                    </a>
-                </div>
-                <div class="item">
-                    <a title="Partner" href="#" class="partner-box">
-                        <img src="images/partner/partner-4.png" alt="partner-1"/>
-                    </a>
-                </div>
-                <div class="item">
-                    <a title="Partner" href="#" class="partner-box">
-                        <img src="images/partner/partner-1.png" alt="partner-1"/>
-                    </a>
-                </div>
-                <div class="item">
-                    <a title="Partner" href="#" class="partner-box">
-                        <img src="images/partner/partner-2.png" alt="partner-1"/>
-                    </a>
-                </div>
-            </div><!-- Owl Carousel /- -->
-        </div><!-- container /- -->
-    </div><!-- Our Partner /- -->
 
     <!-- News Letter -->
     <div id="news-letter-section" class="news-letter-section">
         <!-- container -->
         <div class="container">
-            <!-- Section Header -->
-            <div class="section-header">
-                <h3>Sign up for our Newsletter</h3>
-            </div><!-- Section Header /- -->
+            <x-name-section>
+                Nuestros Servicios
+            </x-name-section>
             <div class="col-12 col-md-12 col-lg-12">
                 <form class="navbar-form">
                     <div class="form-group">
@@ -331,9 +274,9 @@
                             <path
                                 d="M485.211,363.906c0,10.637-2.992,20.498-7.785,29.174L324.225,221.67l151.54-132.584   c5.895,9.355,9.446,20.344,9.446,32.219V363.906z M242.606,252.793l210.863-184.5c-8.653-4.737-18.397-7.642-28.908-7.642H60.651   c-10.524,0-20.271,2.905-28.889,7.642L242.606,252.793z M301.393,241.631l-48.809,42.734c-2.855,2.487-6.41,3.729-9.978,3.729   c-3.57,0-7.125-1.242-9.98-3.729l-48.82-42.736L28.667,415.23c9.299,5.834,20.197,9.329,31.983,9.329h363.911   c11.784,0,22.687-3.495,31.983-9.329L301.393,241.631z M9.448,89.085C3.554,98.44,0,109.429,0,121.305v242.602   c0,10.637,2.978,20.498,7.789,29.174l153.183-171.44L9.448,89.085z"/>
                         </svg>
-                        <input type="text" class="form-control" placeholder="your-email@website.com" required/>
+                        <input type="text" class="form-control" placeholder="contacto@grandezza.com.mx" required/>
                     </div>
-                    <button type="submit" class="btn btn-default">Submit</button>
+                    <button type="submit" class="btn btn-default">Enviar</button>
                 </form>
             </div><!-- col-md-6 /- -->
         </div><!-- container /- -->
@@ -349,14 +292,14 @@
                         <path
                             d="M45.186,27.226v-0.496l-4.175-13.713h-9.239V9.737H9.563v8.487H4.834l-2,2.667h6.729v1.928v0.072H2l-2,2.667h9.562v1.668   H8.5v4.5h1.062v0.668h0.722c0.404,2.393,2.485,4.223,4.992,4.223c2.507,0,4.587-1.83,4.991-4.223h11.382   c0.402,2.393,2.483,4.223,4.99,4.223c2.506,0,4.588-1.83,4.991-4.223h3.555v-0.668h1.169v-4.5H45.186L45.186,27.226z    M15.276,34.233c-1.479,0-2.684-1.205-2.684-2.686c0-1.479,1.204-2.683,2.684-2.683c1.479,0,2.683,1.203,2.683,2.683   C17.959,33.028,16.755,34.233,15.276,34.233z M36.64,34.233c-1.479,0-2.685-1.205-2.685-2.686c0-1.479,1.205-2.683,2.685-2.683   s2.683,1.203,2.683,2.683C39.322,33.028,38.119,34.233,36.64,34.233z M34.156,21.475v-6.074h5.088l1.85,6.074H34.156z"/>
                     </svg>
-                    <span>Free Shipping</span>
+                    <span>Concierge</span>
                 </li>
                 <li>
                     <svg class="support" viewBox="0 0 542.662 542.662">
                         <path
                             d="M363.168,74.051c-18.537,0-36.429,2.368-53.263,6.759c-28.03-11.01-59.299-17.199-92.283-17.199   C97.627,63.61,0,145.123,0,245.312c0,53.143,27.281,102.827,75.141,137.387v96.354l99.845-55.573   c14.104,2.345,28.421,3.54,42.63,3.54c59.479,0,113.439-20.042,152.763-52.445c8.983-0.304,17.994-1.161,26.909-2.607l84.34,46.938   v-81.527c38.906-28.556,61.034-69.348,61.034-112.994C542.674,141.492,462.142,74.051,363.168,74.051z M217.622,397.736   c-14.181,0-28.484-1.338-42.508-3.968l-5.2-0.973l-65.497,36.452v-62.022l-6.504-4.346c-43.617-29.15-68.636-72.008-68.636-117.568   c0-84.046,84.492-152.425,188.346-152.425c16.76,0,32.996,1.804,48.472,5.143c-49.541,26.786-82.437,73.399-82.437,126.354   c0,71.607,60.104,131.64,140.269,146.672C293.648,387.867,257.033,397.736,217.622,397.736z M458.865,317.593l-6.502,4.346v47.174   L402.377,341.3l-0.12,0.022l-5.072,0.949c-11.23,2.104-22.666,3.168-34.021,3.168c-1.225,0-2.425-0.052-3.637-0.074   c-81.162-1.572-146.593-55.214-146.593-120.982c0-51.133,39.568-94.93,95.313-112.642c14.197-4.509,29.437-7.33,45.355-8.145   c3.167-0.163,6.347-0.269,9.565-0.269c82.837,0,150.229,54.307,150.229,121.056C513.397,260.458,493.517,294.435,458.865,317.593z"/>
                     </svg>
-                    <span>24/7 Support</span>
+                    <span>24/7 Pedidos</span>
                 </li>
                 <li>
                     <svg class="promotion" viewBox="0 0 512 512">
@@ -365,7 +308,7 @@
                         <path
                             d="M362.8,337.74c-6.429-6.768-12.821-11.898-16.698-14.788C355.164,293.051,360,260.978,360,228   c0-91.433-36.996-175.999-98.963-226.215c-2.937-2.38-7.137-2.38-10.073,0C188.996,52.001,152,136.568,152,228   c0,32.978,4.837,65.051,13.898,94.953c-3.877,2.89-10.269,8.02-16.698,14.788C135.133,352.548,128,367.439,128,382v122   c0,3.235,1.949,6.152,4.938,7.391c0.99,0.41,2.029,0.609,3.06,0.609c2.082,0,4.128-0.813,5.659-2.343l81.789-81.79   c7.648,8.595,15.853,16.563,24.554,23.864V503c0,4.418,3.582,8,8,8s8-3.582,8-8v-51.268c8.701-7.301,16.906-15.27,24.554-23.864   l81.789,81.79c1.53,1.53,3.576,2.343,5.659,2.343c1.03,0,2.07-0.199,3.06-0.609c2.989-1.238,4.938-4.155,4.938-7.391V382   C384,367.439,376.867,352.548,362.8,337.74z M144,484.687V382c0-12.767,9.018-24.998,16.582-33.01   c3.765-3.988,7.565-7.36,10.686-9.919c10.254,28.139,24.385,54.013,41.899,76.449L144,484.687z M264,430.271V328   c0-4.418-3.582-8-8-8s-8,3.582-8,8v102.271c-5.955-5.685-11.625-11.727-16.985-18.109c-0.357-0.652-0.806-1.266-1.358-1.818   c-0.175-0.175-0.358-0.337-0.545-0.492C190.317,362.437,168,297.387,168,228c0-84.128,32.782-161.908,88-209.571   C311.218,66.092,344,143.872,344,228c0,69.386-22.317,134.436-61.112,181.851c-0.187,0.155-0.37,0.317-0.545,0.492   c-0.552,0.552-1.001,1.166-1.358,1.818C275.625,418.544,269.955,424.586,264,430.271z M368,484.687l-69.167-69.167   c17.525-22.449,31.662-48.34,41.917-76.499C352.011,348.262,368,365.088,368,382V484.687z"/>
                     </svg>
-                    <span>Promotions</span>
+                    <span>Promociones</span>
                 </li>
                 <li>
                     <svg class="seller" viewBox="0 0 24 24">
@@ -376,7 +319,7 @@
                         <path
                             d="M21.434,21.372l-2.392-6.727c-0.074-0.208-0.305-0.317-0.511-0.243c-0.208,0.074-0.317,0.303-0.243,0.511l2.012,5.658   l-2.058-1.266c-0.104-0.063-0.23-0.077-0.346-0.035c-0.114,0.041-0.204,0.133-0.243,0.248l-0.775,2.294l-2.34-6.13   c-0.079-0.206-0.309-0.31-0.516-0.231c-0.207,0.079-0.31,0.311-0.231,0.517l2.736,7.169c0.059,0.155,0.208,0.258,0.374,0.258   c0.002,0,0.005,0,0.008,0c0.168-0.004,0.317-0.112,0.371-0.272l0.97-2.872l2.597,1.597c0.145,0.089,0.329,0.077,0.461-0.03   C21.44,21.71,21.49,21.531,21.434,21.372z"/>
                     </svg>
-                    <span>Top Seller</span>
+                    <span>Pick Up</span>
                 </li>
             </ul>
         </div><!-- container /- -->
@@ -400,9 +343,8 @@
                             <path
                                 d="M192,307.188V160l128-96v227.5c-6.281,0.656-12.938,1.344-20.094,2.062c-27.969,2.813-62.781,6.313-107.281,13.531   L192,307.188z M488.344,145.813L352,64v223.125C406.281,277.188,426.531,253.375,488.344,145.813z M352,319.312V416l160,96V168.719   C445.719,282.938,421,307.906,352,319.312z M21.594,428.938L160,512V344.719C112.031,353.188,66.031,368,21.594,428.938z    M303.094,325.406c-27.531,2.781-61.813,6.219-105.344,13.25l-5.75,0.906V512l128-96v-92.375   C314.531,324.219,309.062,324.812,303.094,325.406z M80,144c-5.469,0-10.813-0.563-16-1.625V256l32-16v-97.625   C90.813,143.438,85.469,144,80,144z M80,0C44.656,0,16,28.625,16,64s28.656,64,64,64c35.375,0,64-28.625,64-64S115.375,0,80,0z    M64,80c-17.688,0-32-14.313-32-32s14.313-32,32-32s32,14.313,32,32S81.688,80,64,80z M128,146.656v113.125l-96,48V146.656   c-12.875-7.531-23.781-18-32-30.344v288.156C52.25,336.25,108.219,321,160,312.25V160l-27.375-16.438   C131.063,144.594,129.625,145.719,128,146.656z"/>
                         </svg>
-                        <h4>Envato Headquarterss </h4>
-                        <p>121 King Street, Melbourne </p>
-                        <p>Victoria 3000 Australia</p>
+                        <h4>Ubicación</h4>
+                        <p>Blvrd Luis Donaldo Colosio 407, Amp. Santa Julia 3ra. Secc, Amp Sta Julia, 42080 Pachuca de Soto, Hgo.</p>
                     </div>
                     <div class="helpline">
                         <svg viewBox="0 0 51.413 51.413">
@@ -415,9 +357,10 @@
                             <path
                                 d="M35.719,20.078v-1.496c0-0.669-0.771-0.711-1.723-0.711h-1.555c-0.951,0-1.722,0.042-1.722,0.711    v1.289v1h-11v-1v-1.289c0-0.669-0.771-0.711-1.722-0.711h-1.556c-0.951,0-1.722,0.042-1.722,0.711v1.496v1.306    C12.213,23.988,4.013,35.073,3.715,36.415l0.004,8.955c0,0.827,0.673,1.5,1.5,1.5h40c0.827,0,1.5-0.673,1.5-1.5v-9    c-0.295-1.303-8.493-12.383-11-14.987V20.078z M19.177,37.62c-0.805,0-1.458-0.652-1.458-1.458s0.653-1.458,1.458-1.458    s1.458,0.652,1.458,1.458S19.982,37.62,19.177,37.62z M19.177,32.62c-0.805,0-1.458-0.652-1.458-1.458s0.653-1.458,1.458-1.458    s1.458,0.652,1.458,1.458S19.982,32.62,19.177,32.62z M19.177,27.621c-0.805,0-1.458-0.652-1.458-1.458    c0-0.805,0.653-1.458,1.458-1.458s1.458,0.653,1.458,1.458C20.635,26.969,19.982,27.621,19.177,27.621z M25.177,37.62    c-0.805,0-1.458-0.652-1.458-1.458s0.653-1.458,1.458-1.458c0.806,0,1.458,0.652,1.458,1.458S25.983,37.62,25.177,37.62z     M25.177,32.62c-0.805,0-1.458-0.652-1.458-1.458s0.653-1.458,1.458-1.458c0.806,0,1.458,0.652,1.458,1.458    S25.983,32.62,25.177,32.62z M25.177,27.621c-0.805,0-1.458-0.652-1.458-1.458c0-0.805,0.653-1.458,1.458-1.458    c0.806,0,1.458,0.653,1.458,1.458C26.635,26.969,25.983,27.621,25.177,27.621z M31.177,37.62c-0.806,0-1.458-0.652-1.458-1.458    s0.652-1.458,1.458-1.458s1.458,0.652,1.458,1.458S31.983,37.62,31.177,37.62z M31.177,32.62c-0.806,0-1.458-0.652-1.458-1.458    s0.652-1.458,1.458-1.458s1.458,0.652,1.458,1.458S31.983,32.62,31.177,32.62z M31.177,27.621c-0.806,0-1.458-0.652-1.458-1.458    c0-0.805,0.652-1.458,1.458-1.458s1.458,0.653,1.458,1.458C32.635,26.969,31.983,27.621,31.177,27.621z"/>
                         </svg>
-                        <h4>Help Lines</h4>
-                        <p>+61 3 8376 6284</p>
-                        <p>+61 3 8376 6285</p>
+                        <h4>Pedidos</h4>
+                        <p>+52 771 715 9936</p>
+                        <p>+52 771 715 9936</p>
+
                     </div>
                 </aside><!-- widget about /- -->
 
@@ -426,46 +369,47 @@
                     <div class="row">
                         <aside class=" col-12 col-sm-4 col-md-4 col-lg-4 widget widget_list_style">
                             <h3 class="widget-title">
-                                GET INSPIRED
-                                <span>from our store</span>
+                                TIENDA
+                                <span>Categorías principales</span>
                             </h3>
                             <ul>
-                                <li><a title="Shoes" href="02_categories.html">Shoes</a></li>
-                                <li><a title="Perfumes" href="02_categories.html">Perfumes</a></li>
-                                <li><a title="Bags" href="02_categories.html">Bags</a></li>
-                                <li><a title="Make Up" href="02_categories.html">Make Up</a></li>
-                                <li><a title="Jewelry" href="02_categories.html">Jewelry</a></li>
-                                <li><a title="Clothing" href="02_categories.html">Clothing</a></li>
+                                <li><a title="Shoes" href="#">Tequilas</a></li>
+                                <li><a title="Perfumes" href="#">Ron</a></li>
+                                <li><a title="Bags" href="#">Whisky</a></li>
+                                <li><a title="Make Up" href="#">Vodka</a></li>
+                                <li><a title="Jewelry" href="#">Brandy</a></li>
+                                <li><a title="Clothing" href="#">Mezcal</a></li>
                             </ul>
                         </aside>
 
                         <aside class="col-12 col-sm-4 col-md-4 col-lg-4 widget widget_list_style">
                             <h3 class="widget-title">
-                                ACCOUNT
-                                <span>informative details</span>
+                                CUENTA
+                                <span>Detalles de tu pedido</span>
                             </h3>
                             <ul>
-                                <li><a title="Order Status" href="#">Order Status</a></li>
-                                <li><a title="My Order History" href="#">My Order History</a></li>
-                                <li><a title="My Favorites" href="#">My Favorites</a></li>
-                                <li><a title="Promo codes" href="#">Promo codes</a></li>
-                                <li><a title="Payments" href="#">Payments</a></li>
-                                <li><a title="Returns" href="#">Returns</a></li>
+                                <li><a title="Estado del pedido" href="#">Estado del pedido</a></li>
+                                <li><a title="Historial de pedidos" href="#">Historial de pedidos</a></li>
+                                <li><a title="Mis favoritos" href="#">Mis favoritos</a></li>
+                                <li><a title="Códigos promocionales" href="#">Códigos promocionales</a></li>
+                                <li><a title="Pagos" href="#">Pagos</a></li>
+                                <li><a title="Devoluciones" href="#">Devoluciones</a></li>
+
                             </ul>
                         </aside>
 
                         <aside class="col-12  col-sm-4 col-md-4 col-lg-4 widget widget_list_style">
                             <h3 class="widget-title">
-                                OUR SHOPS
-                                <span>store locations</span>
+                                SUCURSALES
+                                <span>Tiendas cercanas</span>
                             </h3>
                             <ul>
-                                <li><a title="Mumbai" href="#">Mumbai</a></li>
-                                <li><a title="INDORE" href="#">INDORE</a></li>
-                                <li><a title="Toronto" href="#">Toronto</a></li>
-                                <li><a title="Sidney" href="#">Sidney</a></li>
-                                <li><a title="New York" href="#">New York</a></li>
-                                <li><a title="Paris" href="#">Paris</a></li>
+                                <li><a title="Mumbai" href="#">Pachuca</a></li>
+                                <li><a title="INDORE" href="#">Puebla</a></li>
+                                <li><a title="Toronto" href="#">Veracruz</a></li>
+                                <li><a title="Sidney" href="#">Estado de México</a></li>
+                                <li><a title="New York" href="#">Ciudad de México</a></li>
+                                <li><a title="Paris" href="#">Tlaxcala</a></li>
                             </ul>
                         </aside>
                     </div>
@@ -473,26 +417,26 @@
 
                 <aside class="col-12 col-md-12 col-lg-3 widget widget_facebook">
                     <div class="widget-title">
-                        <h4>massuttier.com.mx <span>786,000 members </span></h4>
+                        <h4>@grandezza <span>786,000 members </span></h4>
                         <button type="submit" value="like" class="btn btn-default pull-right">Like <i
                                 class="fa fa-thumbs-o-up"></i></button>
                     </div>
                     <ul>
-                        <li><a title="Facebook photo" href="#"><img src="images/footer/fb-1.jpg"
+                        <li><a title="Facebook photo" href="#"><img src="images/otros/01.webp" height="57"
                                                                     alt="facebook-photo"/></a></li>
-                        <li><a title="Facebook photo" href="#"><img src="images/footer/fb-2.jpg"
+                        <li><a title="Facebook photo" href="#"><img src="images/otros/02.webp" height="57"
                                                                     alt="facebook-photot"/></a></li>
-                        <li><a title="Facebook photo" href="#"><img src="images/footer/fb-3.jpg"
+                        <li><a title="Facebook photo" href="#"><img src="images/otros/03.webp" height="57"
                                                                     alt="facebook-photo"/></a></li>
-                        <li><a title="Facebook photo" href="#"><img src="images/footer/fb-4.jpg"
+                        <li><a title="Facebook photo" href="#"><img src="images/otros/04.webp" height="57"
                                                                     alt="facebook-photo"/></a></li>
-                        <li><a title="Facebook photo" href="#"><img src="images/footer/fb-5.jpg"
+                        <li><a title="Facebook photo" href="#"><img src="images/otros/01.webp" height="57"
                                                                     alt="facebook-photo"/></a></li>
-                        <li><a title="Facebook photo" href="#"><img src="images/footer/fb-6.jpg"
+                        <li><a title="Facebook photo" href="#"><img src="images/otros/02.webp" height="57"
                                                                     alt="facebook-photo"/></a></li>
-                        <li><a title="Facebook photo" href="#"><img src="images/footer/fb-7.jpg"
+                        <li><a title="Facebook photo" href="#"><img src="images/otros/03.webp" height="57"
                                                                     alt="facebook-photo"/></a></li>
-                        <li><a title="Facebook photo" href="#"><img src="images/footer/fb-8.jpg"
+                        <li><a title="Facebook photo" href="#"><img src="images/otros/04.webp" height="57"
                                                                     alt="facebook-photo"/></a></li>
                     </ul>
                     <a href="#"> facebook page </a>

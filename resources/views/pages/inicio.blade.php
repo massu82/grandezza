@@ -1,6 +1,7 @@
 @extends('layouts.master')
 @section('title', 'Inicio')
 @section('content')
+
     <!-- Slider Section -->
     <div id="slider-section" class="slider-section">
         <div id="carouselexamplegeneric" class="carousel slide slider-indexone" data-bs-ride="carousel">
@@ -10,30 +11,39 @@
                         class="active"></button>
                 <button type="button" data-bs-target="#carouselexamplegeneric" data-bs-slide-to="1"></button>
                 <button type="button" data-bs-target="#carouselexamplegeneric" data-bs-slide-to="2"></button>
+                <button type="button" data-bs-target="#carouselexamplegeneric" data-bs-slide-to="3"></button>
             </div>
             <!-- Wrapper for slides -->
             <div class="carousel-inner" role="listbox">
                 <div class="carousel-item active">
-                    <img src="/images/slider/slide-1.webp" alt="slide-1">
+                    <img src="/images/slider/slide-4.webp" alt="slide-1">
                     <div class="container">
                         <div class="slider-box">
-                            <button class="btn">Button</button>
+                            <button class="btn">Comprar</button>
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="/images/slider/slide-2.webp" alt="slide-1">
+                    <img src="/images/slider/slide-1.webp" alt="slide-2">
                     <div class="container">
                         <div class="slider-box">
-                            <button class="btn">Button</button>
+                            <button class="btn">Comprar</button>
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="/images/slider/slide-3.webp" alt="slide-2">
+                    <img src="/images/slider/slide-2.webp" alt="slide-3">
                     <div class="container">
                         <div class="slider-box">
-                            <button class="btn">Button</button>
+                            <button class="btn">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="/images/slider/slide-3.webp" alt="slide-4">
+                    <div class="container">
+                        <div class="slider-box">
+                            <button class="btn">Comprar</button>
                         </div>
                     </div>
                 </div>
@@ -57,20 +67,6 @@
     <div id="category-section" class="category-section bottom-shadow">
         <!-- container -->
         <div class="container">
-            <div class="row">
-                <div class="col-12 col-md-3 col-lg-3 categories-title">
-                    <h3>Special Offer’s and Discount</h3>
-                    <p>Vivamus nec urna luctus, dignissim est</p>
-                </div>
-                <div class="col-12 col-md-6 col-lg-6">
-                    <h3>70,000+ Collection</h3>
-                    <h4>500+ Stylish Brand’s</h4>
-                </div>
-                <div class="col-12 col-md-3 col-lg-3 categories-title">
-                    <h3>Free 30 Days Returns</h3>
-                    <p>Sed at justo eget nulla placerat</p>
-                </div>
-            </div>
             <div class="category-box-main categories-slider">
                 <!-- Owl Carousel -->
                 <div class="our-partner">
@@ -78,55 +74,51 @@
                         <div class="item">
                             <div class="category-box">
                                 <span class="sale">+786</span>
-                                <a title="Women’s Wear" href="./02_categories.html">
-                                    <img src="images/category/cat-img-1.jpg" alt="cat-img"/>
-                                    <span>Women’s Wear</span>
-                                    <div class="cat-hover"></div>
+                                <a title="Women’s Wear" href="#">
+                                    <img src="images/category/09.webp" alt="cat-img"/>
+
+
                                 </a>
                             </div>
                         </div>
                         <div class="item">
                             <div class="category-box">
-                                <a title="Accessories" href="./02_categories.html">
-                                    <img src="images/category/cat-img-2.jpg" alt="cat-img"/>
-                                    <span>Accessories </span>
-                                    <div class="cat-hover"></div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="category-box">
-                                <span class="new">New</span>
-                                <a title="Kids Wear" href="./02_categories.html">
-                                    <img src="images/category/cat-img-3.jpg" alt="cat-img"/>
-                                    <span>Women Shopping</span>
-                                    <div class="cat-hover"></div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="category-box">
-                                <a title="Women Accessories" href="./02_categories.html">
-                                    <img src="images/category/cat-img-4.jpg" alt="cat-img"/>
-                                    <span>Women Cosmetic</span>
-                                    <div class="cat-hover"></div>
+                                <a title="Accessories" href="#">
+                                    <img src="images/category/02.webp" alt="cat-img"/>
+
                                 </a>
                             </div>
                         </div>
                         <div class="item">
                             <div class="category-box">
                                 <span class="new">New</span>
-                                <a title="Kids Wear" href="./02_categories.html">
-                                    <img src="images/category/cat-img-5.jpg" alt="cat-img"/>
-                                    <span>Kids Wear</span>
-                                    <div class="cat-hover"></div>
+                                <a title="Kids Wear" href="#">
+                                    <img src="images/category/04.webp" alt="cat-img"/>
+
                                 </a>
                             </div>
                         </div>
                         <div class="item">
                             <div class="category-box">
-                                <a title="Women Accessories" href="./02_categories.html">
-                                    <img src="images/category/cat-img-6.jpg" alt="cat-img"/>
+                                <a title="Women Accessories" href="#">
+                                    <img src="images/category/07.webp" alt="cat-img"/>
+
+                                </a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="category-box">
+                                <span class="new">New</span>
+                                <a title="Kids Wear" href="#">
+                                    <img src="images/category/05.webp" alt="cat-img"/>
+
+                                </a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="category-box">
+                                <a title="Women Accessories" href="#">
+                                    <img src="images/category/06.webp" alt="cat-img"/>
                                     <span>Women Accessories</span>
                                     <div class="cat-hover"></div>
                                 </a>
@@ -142,249 +134,36 @@
     <Section id="featured-products" class="featured-products bottom-shadow">
         <!-- container -->
         <div class="container">
-            <!-- Section Header -->
-            <div class="section-header">
-                <h3>Featured products</h3>
-                <p>Nam ac egestas est. Mauris et pulvinar risus, at tincidunt lorem. Maecenas tristique sit amet odio
-                    sit amet aliquet. Quisque a pharetra quam. Sed in ultrices diam, eget sodales ligula. Sed ut
-                    tincidunt lacus.</p>
-            </div><!-- Section Header /- -->
+            <x-name-section>
+                Promociones
+            </x-name-section>
 
             <div class="category-box-main product-box-main row">
-                <div class="col-lg-3 col-md-6 col-12">
-                    <div class="main-product">
-                        <div class="category-box product-box">
-                            <span class="sale">sales</span>
-                            <div class="inner-product">
-                                <img src="images/featured/featured-1.jpg" alt="featured-img"/>
-                                <div class="product-box-inner">
-                                    <ul>
-                                        <li><a title="Eye" href="images/featured/featured-1.jpg"><i
-                                                    class="fa fa-eye"></i></a></li>
-                                        <li><a title="Heart" href="#"><i class="fa fa-heart"></i></a></li>
-                                    </ul>
-                                    <a title="Add to cart" href="04_single_product.html" class="btn">add to cart</a>
+                @foreach($productos as $producto)
+                    <div class="col-lg-3 col-md-6 col-12">
+                        <div class="main-product">
+                            <div class="category-box product-box">
+                                <span class="sale">25%</span>
+                                <div class="inner-product">
+                                    <img src="/images/producto/{{ $producto->imagen }}" alt="{{ $producto->nombre }}"/>
+                                    <div class="product-box-inner">
+                                        <ul>
+                                            <li><a title="Eye" href="/images/producto/{{ $producto->imagen }}"><i
+                                                        class="fa fa-eye"></i></a></li>
+                                            <li><a title="Heart" href="#"><i class="fa fa-heart"></i></a></li>
+                                        </ul>
+                                        <a title="Add to cart" href="#" class="btn">Agregar</a>
+                                    </div>
                                 </div>
                             </div>
+                            <a href="#" class="product-title">{{ $producto->nombre }}</a>
+                            <span class="amount"><del>&dollar;24.99</del> &dollar;{{$producto->precio, 2}}</span>
                         </div>
-                        <a href="04_single_product.html" class="product-title">Skater Dress</a>
-                        <ul class="star">
-                            <li>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star-o"></i>
-                                <i class="fa fa-star-o"></i>
-                            </li>
-                        </ul>
-                        <span class="amount"><del>&dollar;24.99</del> &dollar;19.99</span>
                     </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-12">
-                    <div class="main-product">
-                        <div class="category-box product-box">
-                            <div class="inner-product">
-                                <img src="images/featured/featured-2.jpg" alt="featured-img"/>
-                                <div class="product-box-inner">
-                                    <ul>
-                                        <li><a title="Eye" href="images/featured/featured-2.jpg"><i
-                                                    class="fa fa-eye"></i></a></li>
-                                        <li><a title="Heart" href="#"><i class="fa fa-heart"></i></a></li>
-                                    </ul>
-                                    <a title="Add to cart" href="04_single_product.html" class="btn">add to cart</a>
-                                </div>
-                            </div>
-                        </div>
-                        <a title="Fashionable Pink Top" href="04_single_product.html" class="product-title">Mini
-                            Dress</a>
-                        <ul class="star">
-                            <li>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star-o"></i>
-                                <i class="fa fa-star-o"></i>
-                            </li>
-                        </ul>
-                        <span class="amount"><del>&dollar;24.99</del> &dollar;19.99</span>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-12">
-                    <div class="main-product">
-                        <div class="category-box product-box">
-                            <span class="sale">sales</span>
-                            <div class="inner-product">
-                                <img src="images/featured/featured-3.jpg" alt="featured-img"/>
-                                <div class="product-box-inner">
-                                    <ul>
-                                        <li><a title="Eye" href="images/featured/featured-3.jpg"><i
-                                                    class="fa fa-eye"></i></a></li>
-                                        <li><a title="Heart" href="#"><i class="fa fa-heart"></i></a></li>
-                                    </ul>
-                                    <a title="Add to cart" href="04_single_product.html" class="btn">add to cart</a>
-                                </div>
-                            </div>
-                        </div>
-                        <a href="04_single_product.html" class="product-title">Off Shoulder Dress</a>
-                        <ul class="star">
-                            <li>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star-o"></i>
-                                <i class="fa fa-star-o"></i>
-                            </li>
-                        </ul>
-                        <span class="amount"><del>&dollar;24.99</del> &dollar;19.99</span>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-12">
-                    <div class="main-product">
-                        <div class="category-box product-box">
-                            <div class="inner-product">
-                                <img src="images/featured/featured-4.jpg" alt="featured-img"/>
-                                <div class="product-box-inner">
-                                    <ul>
-                                        <li><a title="Eye" href="images/featured/featured-4.jpg"><i
-                                                    class="fa fa-eye"></i></a></li>
-                                        <li><a title="Heart" href="#"><i class="fa fa-heart"></i></a></li>
-                                    </ul>
-                                    <a href="04_single_product.html" class="btn">add to cart</a>
-                                </div>
-                            </div>
-                        </div>
-                        <a href="04_single_product.html" class="product-title">Sweater Dress</a>
-                        <ul class="star">
-                            <li>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star-o"></i>
-                                <i class="fa fa-star-o"></i>
-                            </li>
-                        </ul>
-                        <span class="amount"><del>&dollar;24.99</del> &dollar;19.99</span>
-                    </div>
-                </div>
+                @endforeach
+
             </div>
-            <div class="category-box-main product-box-main row">
-                <div class="col-lg-3 col-md-6 col-12">
-                    <div class="main-product">
-                        <div class="category-box product-box">
-                            <span class="sale">sales</span>
-                            <div class="inner-product">
-                                <img src="images/featured/featured-5.jpg" alt="featured-img"/>
-                                <div class="product-box-inner">
-                                    <ul>
-                                        <li><a title="Eye" href="images/featured/featured-5.jpg"><i
-                                                    class="fa fa-eye"></i></a></li>
-                                        <li><a title="Heart" href="#"><i class="fa fa-heart"></i></a></li>
-                                    </ul>
-                                    <a title="Add to cart" href="04_single_product.html" class="btn">add to cart</a>
-                                </div>
-                            </div>
-                        </div>
-                        <a href="04_single_product.html" class="product-title">Tie Detail Dress</a>
-                        <ul class="star">
-                            <li>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star-o"></i>
-                                <i class="fa fa-star-o"></i>
-                            </li>
-                        </ul>
-                        <span class="amount"><del>&dollar;24.99</del> &dollar;19.99</span>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-12">
-                    <div class="main-product">
-                        <div class="category-box product-box">
-                            <div class="inner-product">
-                                <img src="images/featured/featured-6.jpg" alt="featured-img"/>
-                                <div class="product-box-inner">
-                                    <ul>
-                                        <li><a title="Eye" href="images/featured/featured-6.jpg"><i
-                                                    class="fa fa-eye"></i></a></li>
-                                        <li><a title="Heart" href="#"><i class="fa fa-heart"></i></a></li>
-                                    </ul>
-                                    <a title="Add to cart" href="04_single_product.html" class="btn">add to cart</a>
-                                </div>
-                            </div>
-                        </div>
-                        <a href="04_single_product.html" class="product-title">Peplum Dress</a>
-                        <ul class="star">
-                            <li>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star-o"></i>
-                                <i class="fa fa-star-o"></i>
-                            </li>
-                        </ul>
-                        <span class="amount"><del>&dollar;24.99</del> &dollar;19.99</span>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-12">
-                    <div class="main-product">
-                        <div class="category-box product-box">
-                            <span class="sale">sales</span>
-                            <div class="inner-product">
-                                <img src="images/featured/featured-7.jpg" alt="featured-img"/>
-                                <div class="product-box-inner">
-                                    <ul>
-                                        <li><a title="Eye" href="images/featured/featured-7.jpg"><i
-                                                    class="fa fa-eye"></i></a></li>
-                                        <li><a title="Heart" href="#"><i class="fa fa-heart"></i></a></li>
-                                    </ul>
-                                    <a href="04_single_product.html" class="btn">add to cart</a>
-                                </div>
-                            </div>
-                        </div>
-                        <a href="04_single_product.html" class="product-title"> Backless Dress</a>
-                        <ul class="star">
-                            <li>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star-o"></i>
-                                <i class="fa fa-star-o"></i>
-                            </li>
-                        </ul>
-                        <span class="amount"><del>&dollar;24.99</del> &dollar;19.99</span>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-12">
-                    <div class="main-product">
-                        <div class="category-box product-box">
-                            <div class="inner-product">
-                                <img src="images/featured/featured-8.jpg" alt="featured-img"/>
-                                <div class="product-box-inner">
-                                    <ul>
-                                        <li><a title="Eye" href="images/featured/featured-8.jpg"><i
-                                                    class="fa fa-eye"></i></a></li>
-                                        <li><a title="Heart" href="#"><i class="fa fa-heart"></i></a></li>
-                                    </ul>
-                                    <a title="Add to cart" href="04_single_product.html" class="btn">add to cart</a>
-                                </div>
-                            </div>
-                        </div>
-                        <a title="Fashionable Pink Top" href="04_single_product.html" class="product-title">Fringe
-                            Detail
-                            Dress</a>
-                        <ul class="star">
-                            <li>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star-o"></i>
-                                <i class="fa fa-star-o"></i>
-                            </li>
-                        </ul>
-                        <span class="amount"><del>&dollar;24.99</del> &dollar;19.99</span>
-                    </div>
-                </div>
-            </div>
+
         </div><!-- container /- -->
     </section>
     <!-- Feature Product /- -->
@@ -394,15 +173,15 @@
         <!-- container -->
         <div class="container">
             <!-- Section Header -->
-            <div class="section-header">
-                <h3>Latest From Our Blog</h3>
-            </div><!-- Section Header /- -->
+            <x-name-section>
+                Eventos
+            </x-name-section>
             <div class="row">
                 <div class="col-12 col-md-12 col-lg-3">
                     <div class="badge-box">
-                        <img src="images/blog/badge-img.jpg" alt="offer img"/>
+                        <img src="images/evento/01.webp" alt="offer img"/>
                         <div class="badge-icon">
-                            <img src="images/blog/badge-icon.png" alt="badge icon"/>
+                            <img src="images/blog/badge-icon.webp" alt="badge icon"/>
                         </div>
                     </div>
                 </div>
@@ -411,20 +190,17 @@
                     <article>
                         <div class="row">
                             <div class="col-md-4 col-sm-4 col-xs-4 ow-left-padding">
-                                <a class="post-thumbnail"><img src="images/blog/post-thumbnail-1.jpg"
+                                <a class="post-thumbnail"><img src="images/evento/02.webp"
                                                                alt="post-thumbnail"/></a>
                             </div>
                             <div class="col-md-8 col-sm-8 col-xs-8">
                                 <header class="entry-header">
-                                    <h2 class="entry-title"><a href="13_single-blog-post.html">Etiam leo neque,
-                                            fringilla
-                                            eget interdum nec,
-                                            Aliquam vel justo.</a></h2>
+                                    <h2 class="entry-title"><a href="#">Grandezza Wine Tour</a></h2>
                                 </header>
                                 <footer class="entry-footer">
 									<span class="posted-on">
-										<span class="sr-only">Posted on </span>
-										<a rel="bookmark" href="13_single-blog-post.html">
+										<span class="sr-only">Publicado el </span>
+										<a rel="bookmark" href="#">
 											<span class="entry-date">04/12/14</span>
 											<svg viewBox="0 0 276.338 276.338">
 												<path
@@ -452,7 +228,7 @@
 									</span>
                                     <span class="byline">
 										<span class="author vcard">
-											<span class="sr-only">Author </span>
+											<span class="sr-only">Autor</span>
 											<a href="#" class="url fn n">Artist
 												<svg viewBox="0 0 43.028 43.028">
 													<path
@@ -466,7 +242,7 @@
                                     <p>Quisque finibus eleifend elit, et mattis magna dignissim a. Phasellus auctor
                                         facilisis mollis.</p>
                                 </div>
-                                <a href="13_single-blog-post.html" class="read-more">Read More</a>
+                                <a href="#" class="read-more">Leer más</a>
                             </div>
                         </div>
                     </article>
@@ -474,18 +250,18 @@
                     <article>
                         <div class="row">
                             <div class="col-md-4 col-sm-4 col-xs-4 ow-left-padding">
-                                <a class="post-thumbnail"><img src="images/blog/post-thumbnail-2.jpg"
+                                <a class="post-thumbnail"><img src="images/evento/03.webp" alt="post-thumbnail"/
                                                                alt="post-thumbnail"/></a>
                             </div>
                             <div class="col-md-8 col-sm-8 col-xs-8">
                                 <header class="entry-header">
-                                    <h2 class="entry-title"><a href="13_single-blog-post.html">GOLD at mollis nibh, quis
+                                    <h2 class="entry-title"><a href="#">GOLD at mollis nibh, quis
                                             varius massa.
                                             Pellentesque nibh massa.</a></h2>
                                 </header>
                                 <footer class="entry-footer">
 									<span class="posted-on">
-										<span class="sr-only">Posted on </span>
+										<span class="sr-only">Publicado el </span>
 										<a rel="bookmark" href="javascript:;">
 											<span class="entry-date">03/12/14
 												<svg viewBox="0 0 276.338 276.338">
@@ -515,7 +291,7 @@
 									</span>
                                     <span class="byline">
 										<span class="author vcard">
-											<span class="sr-only">Author </span>
+											<span class="sr-only">Autor</span>
 											<a title="" href="#" class="url fn n">Ajay
 												<svg viewBox="0 0 43.028 43.028">
 													<path
@@ -529,7 +305,7 @@
                                     <p>Quisque finibus eleifend elit, et mattis magna dignissim a. Phasellus auctor
                                         facilisis mollis.</p>
                                 </div>
-                                <a href="13_single-blog-post.html" class="read-more">Read More</a>
+                                <a href="#" class="read-more">Leer más</a>
                             </div>
                         </div>
                     </article>
@@ -537,14 +313,15 @@
 
                 <div class=" col-12 col-md-12 col-lg-3">
                     <div class="badge-box">
-                        <img src="images/blog/badge-img-2.jpg" alt="offer img"/>
+                        <img src="images/evento/04.webp" alt="offer img"/>
                         <div class="middle-add">
-                            <h3>Take a walk on the wild side</h3>
-                            <a title="Read More" href="13_single-blog-post.html" class="read-more">Read More</a>
+                            <h3 class="text-white">Grandezza Wine Tour</h3>
+                            <a title="Leer más" href="#" class="read-more">Leer más</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div> <!-- Container /- -->
     </section>
+
 @endsection
