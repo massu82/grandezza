@@ -14,7 +14,7 @@
             <!-- Wrapper for slides -->
             <div class="carousel-inner" role="listbox">
                 <div class="carousel-item active">
-                    <img src="images/slider/slide-1.jpg" alt="slide-1">
+                    <img src="/images/slider/slide-1.webp" alt="slide-1">
                     <div class="container">
                         <div class="slider-box">
                             <button class="btn">Button</button>
@@ -22,7 +22,7 @@
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="images/slider/slide-2.jpg" alt="slide-1">
+                    <img src="/images/slider/slide-2.webp" alt="slide-1">
                     <div class="container">
                         <div class="slider-box">
                             <button class="btn">Button</button>
@@ -30,7 +30,7 @@
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="images/slider/slide-3.jpg" alt="slide-2">
+                    <img src="/images/slider/slide-3.webp" alt="slide-2">
                     <div class="container">
                         <div class="slider-box">
                             <button class="btn">Button</button>
