@@ -32,7 +32,7 @@
     <link href="/css/components.css" rel="stylesheet"/>
     <link href="/css/style.css" rel="stylesheet"/>
     <link href="/css/media.css" rel="stylesheet"/>
-    <link id="color" href="/css/color-schemes/default.css" rel="stylesheet"/>
+    <link id="color" href="/css/color-schemes/dark-blue.css" rel="stylesheet"/>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -113,14 +113,14 @@
                     <li><a title="Pinterest" href="#"><i class="fa fa-pinterest-p"></i></a></li>
                 </ul>
                 <div
-                    class="col-12 col-md-12 col-lg-6 ow-right-padding  ow-right-padding2 d-flex align-content-center justify-content-end">
+                    class="col-12 col-md-12 col-lg-6 ow-right-padding ow-right-padding2 d-flex align-content-center justify-content-end">
                     <!--<ul class="top-menu">
                         <li><a title="My whishlist" href="#">My whishlist</a></li>
                         <li><a title="CheckOut" href="#">CheckOut </a></li>
                     </ul>-->
                     <ul class="top-menu">
-                        <li><a title="Login" href="/">Ingresa</a></li>
-                        <li><a title="Register" href="/">Crear tu cuenta</a></li>
+                        <li><a title="Login" href="/login" class="text-special" style="color: #B1A599">Ingresa</a></li>
+                        <li><a title="Register" href="/register" class="text-special" style="color: #B1A599">Crear tu cuenta</a></li>
                     </ul>
                 </div>
             </div>
