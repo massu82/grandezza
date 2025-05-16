@@ -7,6 +7,7 @@ use App\Models\User;
 use Database\Seeders\CategoriasSeeder;
 use Database\Seeders\ProductoSeeder;
 
+
 class DatabaseSeeder extends Seeder
 {
     /**
@@ -16,8 +17,8 @@ class DatabaseSeeder extends Seeder
     {
         // Llamar a otros seeders
         $this->call([
-            ProductoSeeder::class,
             CategoriasSeeder::class,
+            ProductoSeeder::class,
         ]);
 
         // Crear un usuario manualmente

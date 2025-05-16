@@ -63,11 +63,10 @@ class ProductoSeeder extends Seeder
         ];
 
         foreach ($productos as $producto) {
-            DB::table('productos')->insert([
-                ...$producto,
+            DB::table('productos')->insert(array_merge($producto, [
                 'created_at' => now(),
                 'updated_at' => now(),
-            ]);
+            ]));
         }
     }
 }
