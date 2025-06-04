@@ -7,6 +7,7 @@ use App\Http\Controllers\PageController;
 
 Route::controller(PageController::class)->group(function () {
     Route::get('/', 'index')->name('inicio');
+    Route::get('/wine-fest', 'evento')->name('evento');
 });
 
 Route::get('/dashboard', function () {

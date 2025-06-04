@@ -337,6 +337,7 @@ a {
 	margin-bottom: 40px;
 }
 
+
 /* ## Header Section ## */
 
 .header {
@@ -3301,7 +3302,7 @@ select:focus {
 }
 
 .page-inner-banner {
-	background-image: url('../images/about/about-banner.jpg');
+	background-image: url('../images/events/bg-wine-tour.webp');
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -3336,7 +3337,7 @@ select:focus {
 	width: 100%;
 	z-index: 0;
 }
-
+¿
 .about-section {
 	position: relative;
 	padding: 100px 0;

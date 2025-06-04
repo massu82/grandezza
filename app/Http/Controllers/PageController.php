@@ -13,4 +13,8 @@ class PageController extends Controller
         $productos = Producto::with('categoria')->get();
         return view('pages.inicio', compact('productos'));
     }
+    public function evento()
+    {
+        return view('events.index');
+    }
 }
