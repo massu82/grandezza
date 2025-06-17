@@ -10,11 +10,12 @@ class PageController extends Controller
 {
     public function index()
     {
-        $productos = Producto::with('categoria')->get();
-        return view('fest-2025', compact('productos'));
+        //$productos = Producto::with('categoria')->get();
+        //return view('fest-test', compact('productos'));
+        return redirect('fest');
     }
-    public function evento()
+    public function fest()
     {
-        return view('events.index');
+        return view('fest-test');
     }
 }
