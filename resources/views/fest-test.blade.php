@@ -2,16 +2,16 @@
 @section('title','Fest 2025')
 @section('description','Únete a la tercera edición de Grandezza Fest en Hacienda San Juan Pueblilla, Zempoala, Hidalgo. Vino, música, gastronomía y más. Entradas $500.')
 @section('keywords','Grandezza Fest, festival de vino, vino en Hidalgo, eventos Zempoala, Hacienda San Juan Pueblilla, vino y música, catas de vino, evento gourmet, agosto 2025')
-@section('image','')
+@section('image','https://grandezza.com.mx/img/grandezza-fest-2025.jpg')
 @section('url','https://grandezza.com.mx/fest')
 @section('content')
 
     <!-- Hero -->
     <section class="relative bg-cover bg-center h-screen flex flex-col justify-center items-center text-center"
-             style="background-image: url('/img/bg-principal.jpg');">
+             style="background-image: url('/img/bg-principal.webp');">
         <div class="absolute inset-0 bg-black bg-opacity-70"></div>
         <div class="relative z-10 max-w-4xl px-8 py-12 rounded-xl bg-black bg-opacity-60">
-            <img src="/img/grandezza-fest.png" alt="Grandezza Fest" class="img-fluid px-1 py-2 md:px-4 md:py-3">
+            <img src="/img/grandezza-fest.webp" alt="Grandezza Fest" class="img-fluid px-1 py-2 md:px-4 md:py-3">
             <!--<h1 class="text-5xl md:text-7xl font-extrabold mb-4 tracking-wide">Grandezza Fest 2025</h1>-->
             <p class="text-3xl md:text-6xl mb-6 font-alt">Así celebramos el Vino</p>
             <p class="text-xl md:text-2xl mb-8 tracking-wide">2 de agosto · Hacienda San Juan Pueblilla · Zempoala,
@@ -68,12 +68,14 @@
     <!-- Patrocinadores -->
     <section class="py-16 px-6 bg-stone-800">
         <h2 class="text-4xl md:text-5xl mb-6 tracking-wide font-alt text-center">Patrocinadores</h2>
-        <div class="grid grid-cols-3 md:grid-cols-5 gap-8 items-center max-w-6xl mx-auto">
-            <img src="/img/patrocinadores/logo-05.png" alt="Patrocinador 1" class="h-22 object-contain mx-auto"/>
-            <img src="/img/patrocinadores/logo-01.png" alt="Patrocinador 2" class="h-22 object-contain mx-auto"/>
-            <img src="/img/patrocinadores/logo-02.png" alt="Patrocinador 3" class="h-22 object-contain mx-auto"/>
-            <img src="/img/patrocinadores/logo-03.png" alt="Patrocinador 4" class="h-22 object-contain mx-auto"/>
-            <img src="/img/patrocinadores/logo-04.png" alt="Patrocinador 4" class="h-22 object-contain mx-auto"/>
+        <div class="grid grid-cols-3 md:grid-cols-4 gap-8 items-center max-w-6xl mx-auto">
+            <img src="/img/patrocinadores/logo-05.webp" alt="Patrocinador 1" class="h-22 object-contain mx-auto"/>
+            <img src="/img/patrocinadores/logo-01.webp" alt="Patrocinador 2" class="h-22 object-contain mx-auto"/>
+            <img src="/img/patrocinadores/logo-02.webp" alt="Patrocinador 3" class="h-22 object-contain mx-auto"/>
+            <img src="/img/patrocinadores/logo-03.webp" alt="Patrocinador 4" class="h-22 object-contain mx-auto"/>
+            <img src="/img/patrocinadores/logo-04.webp" alt="Patrocinador 4" class="h-22 object-contain mx-auto"/>
+            <img src="/img/patrocinadores/logo-06.webp" alt="Patrocinador 4" class="h-22 object-contain mx-auto"/>
+            <img src="/img/patrocinadores/logo-07.webp" alt="Patrocinador 4" class="h-22 object-contain mx-auto"/>
         </div>
     </section>
 
