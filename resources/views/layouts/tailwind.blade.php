@@ -9,7 +9,7 @@
     <meta name="description" content="@yield('description')">
     <meta name="keywords" content="@yield('keywords')">
     <meta name="author" content="massuttier">
-    <meta property="og:title" content="@yield('title')">
+    <meta property="og:title" content="Grandezza @yield('title')">
     <meta property="og:description" content="@yield('description')">
     <meta property="og:image" content="@yield('image')">
     <meta property="og:url" content="@yield('url')">

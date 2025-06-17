@@ -26,6 +26,16 @@
                class="inline-block bg-stone-600 hover:bg-stone-700 text-white px-10 py-4 rounded-full text-lg md:text-xl shadow-lg transition">Compra
                 tus entradas</a>
         </div>
+        <!-- Flecha para scroll -->
+        <div class="absolute bottom-6 left-1/2 transform -translate-x-1/2">
+            <a href="#video" class="animate-bounce text-white">
+                <!-- Icono de flecha (SVG) -->
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24"
+                     stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                </svg>
+            </a>
+        </div>
     </section>
 
     <!-- Descripción -->
@@ -42,8 +52,9 @@
     <section class="bg-stone-800 py-16 px-6 flex justify-center">
         <div class="w-full max-w-4xl aspect-video rounded-xl overflow-hidden shadow-lg">
             <iframe class="w-full h-full"
+                    id="video"
                     src="https://www.youtube.com/embed/5HwWj7zwsu4?autoplay=1"
-                    title="Grandezza Fest 2025 - Video Promocional"
+                    title="Grandezza Fest 2025 - Reel"
                     frameborder="0"
                     allow="autoplay; encrypted-media"
                     allowfullscreen>
@@ -60,7 +71,7 @@
             experiencia inolvidable.
         </p>
         <a href="https://buy.stripe.com/cNi8wPaaKdeP3DL9yt4gg00" target="_blank" rel="noopener noreferrer"
-           class="inline-block bg-white text-stone-700 px-12 py-5 rounded-full text-2xl font-bold shadow-lg hover:bg-stone-100 transition">
+           class="inline-block bg-white text-stone-700 px-12 py-5 rounded-full text-2xl shadow-lg hover:bg-stone-100 transition">
             Comprar Entradas
         </a>
     </section>
@@ -68,7 +79,7 @@
     <!-- Patrocinadores -->
     <section class="py-16 px-6 bg-stone-800">
         <h2 class="text-4xl md:text-5xl mb-6 tracking-wide font-alt text-center">Patrocinadores</h2>
-        <div class="grid grid-cols-3 md:grid-cols-4 gap-8 items-center max-w-6xl mx-auto">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 items-center max-w-6xl mx-auto">
             <img src="/img/patrocinadores/logo-05.webp" alt="Patrocinador 1" class="h-22 object-contain mx-auto"/>
             <img src="/img/patrocinadores/logo-01.webp" alt="Patrocinador 2" class="h-22 object-contain mx-auto"/>
             <img src="/img/patrocinadores/logo-02.webp" alt="Patrocinador 3" class="h-22 object-contain mx-auto"/>
