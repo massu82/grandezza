@@ -13,8 +13,8 @@
     <meta property="og:description" content="@yield('description')">
     <meta property="og:image" content="@yield('image')">
     <meta property="og:url" content="@yield('url')">
-    <link rel="canonical" href="@yield('url')" />
-    <link rel="icon" href="/img/favicon.png" type="image/png" />
+    <link rel="canonical" href="@yield('url')"/>
+    <link rel="icon" href="/img/favicon.png" type="image/png"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -58,9 +58,13 @@
             s.parentNode.insertBefore(t, s)
         }(window, document, 'script',
             'https://connect.facebook.net/en_US/fbevents.js');
-        fbq('init', '2575089026187348');
+        fbq('init', '729509529611449');
         fbq('track', 'PageView');
     </script>
+    <noscript><img height="1" width="1" style="display:none"
+                   src="https://www.facebook.com/tr?id=729509529611449&ev=PageView&noscript=1"
+        /></noscript>
+    <!-- End Meta Pixel Code -->
     <noscript><img height="1" width="1" style="display:none"
                    src="https://www.facebook.com/tr?id=2575089026187348&ev=PageView&noscript=1"
         /></noscript>
