@@ -34,5 +34,11 @@ return [
             'channel' => env('SLACK_BOT_USER_DEFAULT_CHANNEL'),
         ],
     ],
+    'facebook' => [
+        'pixel_id' => env('FACEBOOK_PIXEL_ID'),
+    ],
+    'gtm' => [
+        'id' => env('GOOGLE_TAG_MANAGER_ID'),
+    ],
 
 ];

@@ -36,7 +36,7 @@
             j.src =
                 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
             f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-TM8G55HT');</script>
+        })(window, document, 'script', 'dataLayer', {{ config('services.gtm.id') }}');</script>
     <!-- End Google Tag Manager -->
     <!-- Meta Pixel Code -->
     <script>
@@ -58,22 +58,18 @@
             s.parentNode.insertBefore(t, s)
         }(window, document, 'script',
             'https://connect.facebook.net/en_US/fbevents.js');
-        fbq('init', '729509529611449');
+        fbq('init', '{{ config('services.facebook.pixel_id') }}');
         fbq('track', 'PageView');
     </script>
     <noscript><img height="1" width="1" style="display:none"
-                   src="https://www.facebook.com/tr?id=729509529611449&ev=PageView&noscript=1"
-        /></noscript>
-    <!-- End Meta Pixel Code -->
-    <noscript><img height="1" width="1" style="display:none"
-                   src="https://www.facebook.com/tr?id=2575089026187348&ev=PageView&noscript=1"
+                   src="https://www.facebook.com/tr?id={{config('services.facebook.pixel_id')}}&ev=PageView&noscript=1"
         /></noscript>
     <!-- End Meta Pixel Code -->
 </head>
 <body class="bg-black text-white">
 <!-- Google Tag Manager (noscript) -->
 <noscript>
-    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TM8G55HT"
+    <iframe src="https://www.googletagmanager.com/ns.html?id={{ config('services.gtm.id') }}"
             height="0" width="0" style="display:none;visibility:hidden"></iframe>
 </noscript>
 <!-- End Google Tag Manager (noscript) -->
