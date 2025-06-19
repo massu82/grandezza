@@ -40,5 +40,8 @@ return [
     'gtm' => [
         'id' => env('GOOGLE_TAG_MANAGER_ID'),
     ],
+    'gta' => [
+        'id' => env('GOOGLE_TAG_ID'),
+    ],
 
 ];
