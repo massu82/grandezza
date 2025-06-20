@@ -23,10 +23,8 @@
 
 
             <a href="https://buy.stripe.com/cNi8wPaaKdeP3DL9yt4gg00" target="_blank"
-               onclick="fbq('track', 'InitiateCheckout');">
-                class="inline-block bg-stone-600 hover:bg-stone-700 text-white px-10 py-4 rounded-full text-lg
-                md:text-xl shadow-lg transition">Compra
-                tus entradas</a>
+               onclick="fbq('track', 'InitiateCheckout');" class="inline-block bg-stone-600 hover:bg-stone-700 text-white px-10 py-4 rounded-full text-lg
+                md:text-xl shadow-lg transition">Compra tus entradas</a>
         </div>
         <!-- Flecha para scroll -->
         <div class="absolute bottom-6 left-1/2 transform -translate-x-1/2">
@@ -72,9 +70,8 @@
             No te quedes fuera del evento más esperado del año. Compra tus entradas ahora y prepárate para vivir una
             experiencia inolvidable.
         </p>
-        <a href="https://buy.stripe.com/cNi8wPaaKdeP3DL9yt4gg00" target="_blank" rel="noopener noreferrer"
-           onclick="fbq('track', 'InitiateCheckout');">
-            class="inline-block bg-white text-stone-700 px-12 py-5 rounded-full font-semibold text-large md:text-2xl
+        <a href="https://buy.stripe.com/cNi8wPaaKdeP3DL9yt4gg00" target="_blank"
+           onclick="fbq('track', 'InitiateCheckout');" class="inline-block bg-white text-stone-700 px-12 py-5 rounded-full font-semibold text-large md:text-2xl
             shadow-lg hover:bg-stone-100 transition">
             Comprar Entradas
         </a>
