@@ -9,7 +9,7 @@
     <!-- Hero -->
     <section class="relative bg-cover bg-center h-screen flex flex-col justify-center items-center text-center"
              style="background-image: url('/img/bg-principal.webp');">
-        <div class="absolute inset-0 bg-black bg-opacity-70"></div>
+        <div class="absolute inset-0 bg-black bg-opacity-50"></div>
         <div class="relative z-10 max-w-4xl px-8 py-12 rounded-xl bg-black bg-opacity-60">
             <img src="/img/grandezza-fest.webp" alt="Grandezza Fest" class="img-fluid px-1 py-2 md:px-4 md:py-3">
             <!--<h1 class="text-5xl md:text-7xl font-extrabold mb-4 tracking-wide">Grandezza Fest 2025</h1>-->
@@ -23,7 +23,9 @@
 
 
             <a href="https://buy.stripe.com/cNi8wPaaKdeP3DL9yt4gg00" target="_blank"
-               class="inline-block bg-stone-600 hover:bg-stone-700 text-white px-10 py-4 rounded-full text-lg md:text-xl shadow-lg transition">Compra
+               onclick="fbq('track', 'InitiateCheckout');">
+                class="inline-block bg-stone-600 hover:bg-stone-700 text-white px-10 py-4 rounded-full text-lg
+                md:text-xl shadow-lg transition">Compra
                 tus entradas</a>
         </div>
         <!-- Flecha para scroll -->
@@ -71,7 +73,9 @@
             experiencia inolvidable.
         </p>
         <a href="https://buy.stripe.com/cNi8wPaaKdeP3DL9yt4gg00" target="_blank" rel="noopener noreferrer"
-           class="inline-block bg-white text-stone-700 px-12 py-5 rounded-full text-2xl shadow-lg hover:bg-stone-100 transition">
+           onclick="fbq('track', 'InitiateCheckout');">
+            class="inline-block bg-white text-stone-700 px-12 py-5 rounded-full font-semibold text-large md:text-2xl
+            shadow-lg hover:bg-stone-100 transition">
             Comprar Entradas
         </a>
     </section>
@@ -79,14 +83,20 @@
     <!-- Patrocinadores -->
     <section class="py-16 px-6 bg-stone-800">
         <h2 class="text-4xl md:text-5xl mb-6 tracking-wide font-alt text-center">Patrocinadores</h2>
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 items-center max-w-6xl mx-auto">
-            <img src="/img/patrocinadores/logo-05.webp" alt="Patrocinador 1" class="h-22 object-contain mx-auto"/>
-            <img src="/img/patrocinadores/logo-01.webp" alt="Patrocinador 2" class="h-22 object-contain mx-auto"/>
-            <img src="/img/patrocinadores/logo-02.webp" alt="Patrocinador 3" class="h-22 object-contain mx-auto"/>
-            <img src="/img/patrocinadores/logo-03.webp" alt="Patrocinador 4" class="h-22 object-contain mx-auto"/>
-            <img src="/img/patrocinadores/logo-04.webp" alt="Patrocinador 4" class="h-22 object-contain mx-auto"/>
-            <img src="/img/patrocinadores/logo-06.webp" alt="Patrocinador 4" class="h-22 object-contain mx-auto"/>
-            <img src="/img/patrocinadores/logo-07.webp" alt="Patrocinador 4" class="h-22 object-contain mx-auto"/>
+        <div class="grid grid-cols-3 md:grid-cols-5 gap-6 items-center max-w-8xl mx-auto">
+            <img src="/img/patrocinadores/logo-05.webp" alt="Patrocinador" class="h-22 object-contain mx-auto"/>
+            <img src="/img/patrocinadores/logo-01.webp" alt="Patrocinador" class="h-22 object-contain mx-auto"/>
+            <img src="/img/patrocinadores/logo-02.webp" alt="Patrocinador" class="h-22 object-contain mx-auto"/>
+            <img src="/img/patrocinadores/logo-03.webp" alt="Patrocinador" class="h-22 object-contain mx-auto"/>
+            <img src="/img/patrocinadores/logo-04.webp" alt="Patrocinador" class="h-22 object-contain mx-auto"/>
+            <img src="/img/patrocinadores/logo-06.webp" alt="Patrocinador" class="h-22 object-contain mx-auto"/>
+            <img src="/img/patrocinadores/logo-07.webp" alt="Patrocinador" class="h-22 object-contain mx-auto"/>
+            <img src="/img/patrocinadores/logo-08.webp" alt="Patrocinador" class="h-22 object-contain mx-auto"/>
+            <img src="/img/patrocinadores/logo-09.webp" alt="Patrocinador" class="h-22 object-contain mx-auto"/>
+            <img src="/img/patrocinadores/logo-10.webp" alt="Patrocinador" class="h-22 object-contain mx-auto"/>
+            <img src="/img/patrocinadores/logo-11.webp" alt="Patrocinador" class="h-22 object-contain mx-auto"/>
+            <img src="/img/patrocinadores/logo-12.webp" alt="Patrocinador" class="h-22 object-contain mx-auto"/>
+            <img src="/img/patrocinadores/logo-13.webp" alt="Patrocinador" class="h-22 object-contain mx-auto"/>
         </div>
     </section>
 
@@ -101,34 +111,38 @@
             <li class="bg-stone-800 p-6 rounded-xl shadow-lg flex justify-between items-center">
                 <span>Holiday Inn Express Pachuca</span>
                 <a href="https://maps.app.goo.gl/VG6sHUns2CvhwUqq6"
-                   class="text-stone-500 hover:text-stone-400 font-semibold underline" target=" _blank">Ver
+                   class="text-stone-500 hover:text-stone-400 font-semibold underline" rel="nofollow" target=" _blank">Ver
                     ubicación</a>
             </li>
             <li class="bg-stone-800 p-6 rounded-xl shadow-lg flex justify-between items-center">
                 <span>Acueducto</span>
                 <a href="https://maps.app.goo.gl/ygGbuKZrWeubEru97"
-                   class="text-stone-500 hover:text-stone-400 font-semibold underline" target=" _blank">Ver
+                   class="text-stone-500 hover:text-stone-400 font-semibold underline" rel="nofollow" target=" _blank">Ver
                     ubicación</a>
             </li>
             <li class="bg-stone-800 p-6 rounded-xl shadow-lg flex justify-between items-center">
                 <span>Casa Azul</span>
                 <a href="https://maps.app.goo.gl/TpnKzytbXPqX28K5A"
-                   class="text-stone-500 hover:text-stone-400 font-semibold underline" target="_blank">Ver ubicación</a>
+                   class="text-stone-500 hover:text-stone-400 font-semibold underline" rel="nofollow" target="_blank">Ver
+                    ubicación</a>
             </li>
             <li class="bg-stone-800 p-6 rounded-xl shadow-lg flex justify-between items-center">
                 <span>Real San Juan</span>
                 <a href="https://maps.app.goo.gl/SxFVci5RXSxvzeJ77"
-                   class="text-stone-500 hover:text-stone-400 font-semibold underline" target="_blank">Ver ubicación</a>
+                   class="text-stone-500 hover:text-stone-400 font-semibold underline" rel="nofollow" target="_blank">Ver
+                    ubicación</a>
             </li>
             <li class="bg-stone-800 p-6 rounded-xl shadow-lg flex justify-between items-center">
                 <span>La Noria</span>
                 <a href="https://maps.app.goo.gl/L6kUNHSMDJUPVT5y7"
-                   class="text-stone-500 hover:text-stone-400 font-semibold underline" target="_blank">Ver ubicación</a>
+                   class="text-stone-500 hover:text-stone-400 font-semibold underline" rel="nofollow" target="_blank">Ver
+                    ubicación</a>
             </li>
             <li class="bg-stone-800 p-6 rounded-xl shadow-lg flex justify-between items-center">
                 <span>Travesia Villas</span>
                 <a href="https://maps.app.goo.gl/6ruk9KcT7NuRuh657"
-                   class="text-stone-500 hover:text-stone-400 font-semibold underline" target="_blank">Ver ubicación</a>
+                   class="text-stone-500 hover:text-stone-400 font-semibold underline" rel="nofollow" target="_blank">Ver
+                    ubicación</a>
             </li>
         </ul>
     </section>
