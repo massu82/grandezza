@@ -4,6 +4,42 @@
 @section('keywords','Grandezza Fest, festival de vino, vino en Hidalgo, eventos Zempoala, Hacienda San Juan Pueblilla, vino y música, catas de vino, evento gourmet, agosto 2025')
 @section('image','https://grandezza.com.mx/img/grandezza-fest-2025.jpg')
 @section('url','https://grandezza.com.mx/fest')
+@push('heads')
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "Event",
+          "name": "Grandezza Fest 2025",
+          "startDate": "2025-08-02T11:00:00-06:00",
+          "endDate": "2025-08-02T23:59:00-06:00",
+          "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+          "eventStatus": "https://schema.org/EventScheduled",
+          "location": {
+            "@type": "Place",
+            "name": "Hacienda San Juan Pueblilla",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Domicilio Conocido Sn",
+              "addressLocality": "Zempoala",
+              "addressRegion": "Hidalgo",
+              "postalCode": "24060",
+              "addressCountry": "MX"
+            }
+          },
+          "image": [
+            "https://grandezza.com.mx/img/grandezza-fest-2025.jpg"
+          ],
+          "description": "La tercera edición de Grandezza Fest, con catas, degustaciones, música y los mejores exponentes del vino.",
+          "url": "https://grandezza.com.mx/fest",
+          "organizer": {
+            "@type": "Organization",
+            "name": "Grandezza",
+            "url": "https://grandezza.com.mx"
+          }
+        }
+    </script>
+
+@endpush
 @section('content')
 
     <!-- Hero -->

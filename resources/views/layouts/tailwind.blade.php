@@ -78,6 +78,7 @@
                    src="https://www.facebook.com/tr?id={{config('services.facebook.pixel_id')}}&ev=PageView&noscript=1"
         /></noscript>
     <!-- End Meta Pixel Code -->
+    @stack('heads')
 </head>
 <body class="bg-black text-white">
 <!-- Google Tag Manager (noscript) -->
