@@ -46,6 +46,30 @@
                 'value': 1
             });
         }
+
+        // Helper function to delay opening a URL until a gtag event is sent.
+        // Call it in response to an action that should navigate to a URL.
+        function gtagSendEvent(url) {
+            var callback = function () {
+                if (typeof url === 'string') {
+                    window.location = url;
+                }
+            };
+            gtag('event', 'conversion_event_begin_checkout', {
+                'event_callback': callback,
+                'event_timeout': 2000,
+                'items': [{
+                    'id': 'producto123',
+                    'name': 'Entrada General Grandezza Fest',
+                    'quantity': 1,
+                    'price': 500.00
+                }],
+                'currency': 'MXN',
+                'value': 500.00
+            });
+            return false;
+        }
+
     </script>
 
 @endpush
@@ -68,7 +92,7 @@
 
 
             <a href="https://buy.stripe.com/cNi8wPaaKdeP3DL9yt4gg00" target="_blank"
-               onclick="fbq('track', 'InitiateCheckout'); gtag('event', 'compra_iniciada', {event_category: 'boleto', event_label: 'grandezza_fest'});"
+               onclick="fbq('track', 'InitiateCheckout'); gtag('event', 'compra_iniciada', {event_category: 'boleto', event_label: 'grandezza_fest'}); gtag('event','conversion_event_begin_checkout')"
                class="inline-block bg-stone-600 hover:bg-stone-700 text-white px-10 py-4 rounded-full text-lg md:text-xl shadow-lg transition">
                 Compra tus entradas
             </a>
@@ -119,7 +143,7 @@
             experiencia inolvidable.
         </p>
         <a href="https://buy.stripe.com/cNi8wPaaKdeP3DL9yt4gg00" target="_blank"
-           onclick="fbq('track', 'InitiateCheckout'); gtag('event', 'compra_iniciada', {event_category: 'boleto', event_label: 'grandezza_fest'});"
+           onclick="fbq('track', 'InitiateCheckout'); gtag('event', 'compra_iniciada', {event_category: 'boleto', event_label: 'grandezza_fest'}); gtag('event','conversion_event_begin_checkout')"
            class="inline-block bg-white text-stone-700 px-12 py-5 rounded-full font-semibold text-large md:text-2xl
             shadow-lg hover:bg-stone-100 transition">
             Comprar Entradas
