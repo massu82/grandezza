@@ -1,5 +1,5 @@
 @extends('layouts.tailwind')
-@section('title','Fest 2025')
+@section('title','Grandezza Fest 2025 | Festival de vino y música en Zempoala')
 @section('description','Únete a la tercera edición de Grandezza Fest en Hacienda San Juan Pueblilla, Zempoala, Hidalgo. Vino, música, gastronomía y más. Entradas $500.')
 @section('keywords','Grandezza Fest, festival de vino, vino en Hidalgo, eventos Zempoala, Hacienda San Juan Pueblilla, vino y música, catas de vino, evento gourmet, agosto 2025')
 @section('image','https://grandezza.com.mx/img/grandezza-fest-2025.jpg')
