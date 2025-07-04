@@ -83,6 +83,7 @@
             <img src="/img/grandezza-fest.webp" alt="Grandezza Fest" class="img-fluid px-1 py-2 md:px-4 md:py-3">
             <!--<h1 class="text-5xl md:text-7xl font-extrabold mb-4 tracking-wide">Grandezza Fest 2025</h1>-->
             <p class="text-3xl md:text-6xl mb-6 font-alt">Así celebramos el Vino</p>
+            <img src="/img/hacienda.webp" alt="Hacienda San Juan Pueblilla" class="-mt-12 img-fluid">
             <p class="text-xl md:text-2xl mb-8 tracking-wide">2 de agosto · Hacienda San Juan Pueblilla · Zempoala,
                 Hidalgo</p>
 
@@ -153,7 +154,7 @@
     <!-- Patrocinadores -->
     <section class="py-16 px-6 bg-stone-800">
         <h2 class="text-4xl md:text-5xl mb-6 tracking-wide font-alt text-center">Patrocinadores</h2>
-        <div class="grid grid-cols-3 md:grid-cols-5 gap-6 items-center max-w-8xl mx-auto">
+        <div class="grid grid-cols-3 md:grid-cols-5 lg:grid-cols-6 gap-6 items-center max-w-8xl mx-auto">
             <img src="/img/patrocinadores/logo-05.webp" alt="Patrocinador" class="h-22 object-contain mx-auto"/>
             <img src="/img/patrocinadores/logo-01.webp" alt="Patrocinador" class="h-22 object-contain mx-auto"/>
             <img src="/img/patrocinadores/logo-02.webp" alt="Patrocinador" class="h-22 object-contain mx-auto"/>
@@ -167,6 +168,9 @@
             <img src="/img/patrocinadores/logo-11.webp" alt="Patrocinador" class="h-22 object-contain mx-auto"/>
             <img src="/img/patrocinadores/logo-12.webp" alt="Patrocinador" class="h-22 object-contain mx-auto"/>
             <img src="/img/patrocinadores/logo-13.webp" alt="Patrocinador" class="h-22 object-contain mx-auto"/>
+            <img src="/img/patrocinadores/logo-14.webp" alt="Patrocinador" class="h-22 object-contain mx-auto"/>
+            <img src="/img/patrocinadores/logo-15.webp" alt="Patrocinador" class="h-22 object-contain mx-auto"/>
+            <img src="/img/patrocinadores/logo-16.webp" alt="Patrocinador" class="h-22 object-contain mx-auto"/>
         </div>
     </section>
 
