@@ -93,13 +93,13 @@
                  aria-label="Cuenta regresiva para el evento Grandezza Fest"></div>
             <!-- Noscript content for added SEO -->
             <noscript><a href="https://www.eventbrite.com/e/grandezza-fest-2025-tickets-1466057159429"
-                         rel="noopener noreferrer" target="_blank">Buy Tickets on Eventbrite</a></noscript>
+                         rel="noopener noreferrer" target="_blank">Comprar entradas en Eventbrite</a></noscript>
             <!-- You can customize this button any way you like -->
 
 
             <button id="eventbrite-widget-modal-trigger-1466057159429"
-               onclick="fbq('track', 'InitiateCheckout'); gtag('event', 'compra_iniciada', {event_category: 'boleto', event_label: 'grandezza_fest'}); gtag('event','conversion_event_begin_checkout')"
-               class="inline-block bg-stone-600 hover:bg-stone-700 text-white px-10 py-4 rounded-full text-lg md:text-xl shadow-lg transition">
+                    onclick="fbq('track', 'InitiateCheckout'); gtag('event', 'compra_iniciada', {event_category: 'boleto', event_label: 'grandezza_fest'}); gtag('event','conversion_event_begin_checkout')"
+                    class="inline-block bg-stone-600 hover:bg-stone-700 text-white px-10 py-4 rounded-full text-lg md:text-xl shadow-lg transition">
                 Compra tus entradas
             </button>
 
@@ -148,12 +148,12 @@
             No te quedes fuera del evento más esperado del año. Compra tus entradas ahora y prepárate para vivir una
             experiencia inolvidable.
         </p>
-        <a href="https://buy.stripe.com/cNi8wPaaKdeP3DL9yt4gg00" target="_blank"
-           onclick="fbq('track', 'InitiateCheckout'); gtag('event', 'compra_iniciada', {event_category: 'boleto', event_label: 'grandezza_fest'}); gtag('event','conversion_event_begin_checkout')"
-           class="inline-block bg-white text-stone-700 px-12 py-5 rounded-full font-semibold text-large md:text-2xl
+        <button id="eventbrite-widget-modal-trigger-1466057159429"
+                onclick="fbq('track', 'InitiateCheckout'); gtag('event', 'compra_iniciada', {event_category: 'boleto', event_label: 'grandezza_fest'}); gtag('event','conversion_event_begin_checkout')"
+                class="inline-block bg-white text-stone-700 px-12 py-5 rounded-full font-semibold text-large md:text-2xl
             shadow-lg hover:bg-stone-100 transition">
             Comprar Entradas
-        </a>
+        </button>
     </section>
 
     <!-- Patrocinadores -->
@@ -233,7 +233,7 @@
             Hidalgo</p>
         <p class="text-white text-center mb-4">Domicilio Conocido Sn, Pueblilla, 24060 Zempoala, Hgo. <a
                 class="btn underline" href="https://maps.app.goo.gl/GW5Z4dh2AMk4kAY98"
-                target="_blank"><strong>Mapa</strong></a></p>
+                target="_blank"><strong class="text-red-500">Mapa</strong></a></p>
         <div class="w-full max-w-5xl mx-auto aspect-video rounded-xl overflow-hidden shadow-lg">
             <iframe
                 class="w-full h-full"
