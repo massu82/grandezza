@@ -78,7 +78,7 @@
 
     <!-- Hero -->
     <section class="relative bg-cover bg-center h-screen flex flex-col justify-center items-center text-center"
-             style="background-image: url('/img/bg-principal.webp');">
+             style="background-image: url('/img/hacienda.webp');">
         <div class="absolute inset-0 bg-black bg-opacity-50"></div>
         <div class="relative z-10 max-w-4xl px-8 py-12 rounded-xl bg-black bg-opacity-60">
             <img src="/img/grandezza-fest.webp" alt="Grandezza Fest" class="img-fluid px-1 py-2 md:px-4 md:py-3 mt-4">
@@ -95,7 +95,6 @@
             <noscript><a href="https://www.eventbrite.com/e/grandezza-fest-2025-tickets-1466057159429"
                          rel="noopener noreferrer" target="_blank">Comprar entradas en Eventbrite</a></noscript>
             <!-- You can customize this button any way you like -->
-
 
             <button id="eventbrite-widget-modal-trigger-1466057159429"
                     onclick="fbq('track', 'InitiateCheckout'); gtag('event', 'compra_iniciada', {event_category: 'boleto', event_label: 'grandezza_fest'}); gtag('event','conversion_event_begin_checkout')"
@@ -157,7 +156,7 @@
     </section>
 
     <!-- Patrocinadores -->
-    <section class="py-16 px-6 bg-stone-800">
+    <section class="py-16 px-6 bg-stone-800 dark:bg-black">
         <h2 class="text-4xl md:text-5xl mb-6 tracking-wide font-alt text-center">Patrocinadores</h2>
         <div class="grid grid-cols-3 md:grid-cols-5 lg:grid-cols-6 gap-6 items-center max-w-8xl mx-auto">
             <img src="/img/patrocinadores/logo-05.webp" alt="Patrocinador" class="h-22 object-contain mx-auto"/>
@@ -178,6 +177,69 @@
             <img src="/img/patrocinadores/logo-16.webp" alt="Patrocinador" class="h-22 object-contain mx-auto"/>
         </div>
     </section>
+    <section id="faq" class="bg-white dark:bg-stone-800 py-16 px-4 sm:px-8 lg:px-24">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="text-4xl md:text-5xl mb-6 tracking-wide font-alt text-center">Preguntas Frecuentes</h2>
+            <div class="space-y-6">
+
+                <div>
+                    <h3 class="text-lg font-semibold text-stone-700 dark:text-stone-200">¿Dónde y cuándo se realiza el evento?</h3>
+                    <p class="text-stone-600 dark:text-stone-400">Grandezza Fest 2025 se llevará a cabo el sábado 2 de agosto en la Hacienda San Juan Pueblilla, ubicada en Zempoala, Hidalgo.</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold text-stone-700 dark:text-stone-200">¿Costo del Boleto?</h3>
+                    <p class="text-stone-600 dark:text-stone-400">La <b>preventa es de $500 pesos</b>, el dia del evento costará <b>$600 pesos</b>.</p>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-semibold text-stone-700 dark:text-stone-200">¿A qué hora comienza y termina el festival?</h3>
+                    <p class="text-stone-600 dark:text-stone-400">La inauguración es a las 11:00 a.m. y el evento concluirá aproximadamente a las 11:00 p.m.</p>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-semibold text-stone-700 dark:text-stone-200">¿Puedo comprar boletos en el lugar?</h3>
+                    <p class="text-stone-600 dark:text-stone-400">Si habrá taquilla en el evento, te recomendamos adquirir tus boletos en línea a través de <a href="https://grandezza.com.mx/fest" class="text-blue-600 dark:text-blue-400 underline">grandezza.com.mx</a>, ya que el cupo es limitado.</p>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-semibold text-stone-700 dark:text-stone-200">¿Habrá estacionamiento disponible?</h3>
+                    <p class="text-stone-600 dark:text-stone-400">Sí, contamos con estacionamiento para asistentes. Se asignará por orden de llegada hasta agotar espacios.</p>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-semibold text-stone-700 dark:text-stone-200">¿Pueden asistir menores de edad?</h3>
+                    <p class="text-stone-600 dark:text-stone-400">El evento es para mayores de 18 años. Se solicitará identificación oficial en el acceso.</p>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-semibold text-stone-700 dark:text-stone-200">¿Qué incluye mi boleto?</h3>
+                    <p class="text-stone-600 dark:text-stone-400">Tu boleto incluye acceso al evento, áreas de degustación, presentaciones musicales y actividades al aire libre. Algunos productos o experiencias como las Catas pueden tener costo adicional.</p>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-semibold text-stone-700 dark:text-stone-200">¿Puedo salir y volver a entrar al evento?</h3>
+                    <p class="text-stone-600 dark:text-stone-400">Si, se permite el reingreso al evento.</p>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-semibold text-stone-700 dark:text-stone-200">¿Qué pasa si llueve?</h3>
+                    <p class="text-stone-600 dark:text-stone-400">Grandezza Fest se realiza sin importar las condiciones climáticas. Te sugerimos venir preparado para el clima.</p>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-semibold text-stone-700 dark:text-stone-200">¿Habrá opciones de alimentos?</h3>
+                    <p class="text-stone-600 dark:text-stone-400">Sí, contaremos con degustaciones de nuestros diversos patrocinadores. Consulta con cada proveedor dentro del festival.</p>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-semibold text-stone-700 dark:text-stone-200">¿Qué debo llevar al evento?</h3>
+                    <p class="text-stone-600 dark:text-stone-400">Es recomendable bloqueador solar, identificación oficial y buen ánimo. No está permitido el ingreso con alimentos, bebidas, armas o drogas.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
 
     <!-- Hospedaje -->
     <section class="py-20 px-6 bg-stone-900">
