@@ -71,7 +71,7 @@
         }
 
     </script>
-    <script src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script>
+    <!--<script src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script>-->
 
 @endpush
 @section('content')
@@ -330,7 +330,7 @@
     <!--Boton flotante-->
     <a href="https://buy.stripe.com/cNi8wPaaKdeP3DL9yt4gg00" target="_blank"
             onclick="fbq('track', 'InitiateCheckout'); gtag('event', 'compra_iniciada', {event_category: 'boleto', event_label: 'grandezza_fest'}); gtag('event','conversion_event_begin_checkout')"
-            class="hidden fixed bottom-6 right-6 z-50 bg-red-700 hover:bg-red-800 text-white font-semibold py-3 px-5 rounded-full shadow-lg transition-all duration-300 text-sm sm:text-base flex items-center gap-2">
+            class="hidden fixed ctaButton bottom-6 right-6 z-50 bg-red-700 hover:bg-red-800 text-white font-semibold py-3 px-5 rounded-full shadow-lg transition-all duration-300 text-sm sm:text-base flex items-center gap-2">
         <!-- Ícono SVG de boleto -->
         <svg width="30px" height="30px" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
             <path fill="none" stroke="#ffffff" stroke-miterlimit="10" stroke-width="32"
@@ -390,7 +390,7 @@
 
         countdown();
     </script>
-    <script type="text/javascript">
+    <!--<script type="text/javascript">
         var exampleCallback = function () {
             console.log('Order complete!');
         };
@@ -402,7 +402,7 @@
             modalTriggerElementId: 'eventbrite-widget-modal-trigger-1466057159429',
             onOrderComplete: exampleCallback
         });
-    </script>
+    </script>-->
     <script>
         const ctaButton = document.querySelector('.ctaButton');
         window.addEventListener('scroll', () => {
