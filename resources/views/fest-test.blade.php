@@ -96,11 +96,11 @@
                          rel="noopener noreferrer" target="_blank">Comprar entradas en Eventbrite</a></noscript>
             <!-- You can customize this button any way you like -->
 
-            <button id="eventbrite-widget-modal-trigger-1466057159429"
+            <a href="https://buy.stripe.com/cNi8wPaaKdeP3DL9yt4gg00" target="_blank"
                     onclick="fbq('track', 'InitiateCheckout'); gtag('event', 'compra_iniciada', {event_category: 'boleto', event_label: 'grandezza_fest'}); gtag('event','conversion_event_begin_checkout')"
                     class="inline-block bg-stone-600 hover:bg-stone-700 text-white px-10 py-4 rounded-full text-lg md:text-xl shadow-lg transition">
                 Compra tus entradas
-            </button>
+            </a>
 
         </div>
         <!-- Flecha para scroll -->
@@ -147,12 +147,11 @@
             No te quedes fuera del evento más esperado del año. Compra tus entradas ahora y prepárate para vivir una
             experiencia inolvidable.
         </p>
-        <button id="eventbrite-widget-modal-trigger-1466057159429"
+        <a href="https://buy.stripe.com/cNi8wPaaKdeP3DL9yt4gg00" target="_blank"
                 onclick="fbq('track', 'InitiateCheckout'); gtag('event', 'compra_iniciada', {event_category: 'boleto', event_label: 'grandezza_fest'}); gtag('event','conversion_event_begin_checkout')"
-                class="inline-block bg-white text-stone-700 px-12 py-5 rounded-full font-semibold text-large md:text-2xl
-            shadow-lg hover:bg-stone-100 transition">
+                class="inline-block bg-white text-stone-700 px-12 py-5 rounded-full font-semibold text-large md:text-2xl shadow-lg hover:bg-stone-100 transition">
             Comprar Entradas
-        </button>
+        </a>
     </section>
 
     <!-- Patrocinadores -->
@@ -329,9 +328,9 @@
         </div>
     </section>
     <!--Boton flotante-->
-    <button id="eventbrite-widget-modal-trigger-1466057159429"
+    <a href="https://buy.stripe.com/cNi8wPaaKdeP3DL9yt4gg00" target="_blank"
             onclick="fbq('track', 'InitiateCheckout'); gtag('event', 'compra_iniciada', {event_category: 'boleto', event_label: 'grandezza_fest'}); gtag('event','conversion_event_begin_checkout')"
-            class="hidden fixed ctaButton bottom-6 right-6 z-50 bg-red-700 hover:bg-red-800 text-white font-semibold py-3 px-5 rounded-full shadow-lg transition-all duration-300 text-sm sm:text-base flex items-center gap-2">
+            class="hidden fixed bottom-6 right-6 z-50 bg-red-700 hover:bg-red-800 text-white font-semibold py-3 px-5 rounded-full shadow-lg transition-all duration-300 text-sm sm:text-base flex items-center gap-2">
         <!-- Ícono SVG de boleto -->
         <svg width="30px" height="30px" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
             <path fill="none" stroke="#ffffff" stroke-miterlimit="10" stroke-width="32"
@@ -346,7 +345,7 @@
                   y1="278.01" x2="371.56" y2="261.5"/>
         </svg>
         Comprar Boletos
-    </button>
+    </a>
 
     <!-- Footer -->
     <footer class="bg-black text-stone-400 text-center py-8">
