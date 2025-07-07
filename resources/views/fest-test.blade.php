@@ -183,57 +183,78 @@
             <div class="space-y-6">
 
                 <div>
-                    <h3 class="text-lg font-semibold text-stone-700 dark:text-stone-200">¿Dónde y cuándo se realiza el evento?</h3>
-                    <p class="text-stone-600 dark:text-stone-400">Grandezza Fest 2025 se llevará a cabo el sábado 2 de agosto en la Hacienda San Juan Pueblilla, ubicada en Zempoala, Hidalgo.</p>
+                    <h3 class="text-lg font-semibold text-stone-700 dark:text-stone-200">¿Dónde y cuándo se realiza el
+                        evento?</h3>
+                    <p class="text-stone-600 dark:text-stone-400">Grandezza Fest 2025 se llevará a cabo el sábado 2 de
+                        agosto en la Hacienda San Juan Pueblilla, ubicada en Zempoala, Hidalgo.</p>
                 </div>
                 <div>
                     <h3 class="text-lg font-semibold text-stone-700 dark:text-stone-200">¿Costo del Boleto?</h3>
-                    <p class="text-stone-600 dark:text-stone-400">La <b>preventa es de $500 pesos</b>, el dia del evento costará <b>$600 pesos</b>.</p>
+                    <p class="text-stone-600 dark:text-stone-400">La <b>preventa es de $500 pesos</b>, el dia del evento
+                        costará <b>$600 pesos</b>.</p>
                 </div>
 
                 <div>
-                    <h3 class="text-lg font-semibold text-stone-700 dark:text-stone-200">¿A qué hora comienza y termina el festival?</h3>
-                    <p class="text-stone-600 dark:text-stone-400">La inauguración es a las 11:00 a.m. y el evento concluirá aproximadamente a las 11:00 p.m.</p>
+                    <h3 class="text-lg font-semibold text-stone-700 dark:text-stone-200">¿A qué hora comienza y termina
+                        el festival?</h3>
+                    <p class="text-stone-600 dark:text-stone-400">La inauguración es a las 11:00 a.m. y el evento
+                        concluirá aproximadamente a las 11:00 p.m.</p>
                 </div>
 
                 <div>
-                    <h3 class="text-lg font-semibold text-stone-700 dark:text-stone-200">¿Puedo comprar boletos en el lugar?</h3>
-                    <p class="text-stone-600 dark:text-stone-400">Si habrá taquilla en el evento, te recomendamos adquirir tus boletos en línea a través de <a href="https://grandezza.com.mx/fest" class="text-blue-600 dark:text-blue-400 underline">grandezza.com.mx</a>, ya que el cupo es limitado.</p>
+                    <h3 class="text-lg font-semibold text-stone-700 dark:text-stone-200">¿Puedo comprar boletos en el
+                        lugar?</h3>
+                    <p class="text-stone-600 dark:text-stone-400">Si habrá taquilla en el evento, te recomendamos
+                        adquirir tus boletos en línea a través de <a href="https://grandezza.com.mx/fest"
+                                                                     class="text-blue-600 dark:text-blue-400 underline">grandezza.com.mx</a>,
+                        ya que el cupo es limitado.</p>
                 </div>
 
                 <div>
-                    <h3 class="text-lg font-semibold text-stone-700 dark:text-stone-200">¿Habrá estacionamiento disponible?</h3>
-                    <p class="text-stone-600 dark:text-stone-400">Sí, contamos con estacionamiento para asistentes. Se asignará por orden de llegada hasta agotar espacios.</p>
+                    <h3 class="text-lg font-semibold text-stone-700 dark:text-stone-200">¿Habrá estacionamiento
+                        disponible?</h3>
+                    <p class="text-stone-600 dark:text-stone-400">Sí, contamos con estacionamiento para asistentes. Se
+                        asignará por orden de llegada hasta agotar espacios.</p>
                 </div>
 
                 <div>
-                    <h3 class="text-lg font-semibold text-stone-700 dark:text-stone-200">¿Pueden asistir menores de edad?</h3>
-                    <p class="text-stone-600 dark:text-stone-400">El evento es para mayores de 18 años. Se solicitará identificación oficial en el acceso.</p>
+                    <h3 class="text-lg font-semibold text-stone-700 dark:text-stone-200">¿Pueden asistir menores de
+                        edad?</h3>
+                    <p class="text-stone-600 dark:text-stone-400">El evento es para mayores de 18 años. Se solicitará
+                        identificación oficial en el acceso.</p>
                 </div>
 
                 <div>
                     <h3 class="text-lg font-semibold text-stone-700 dark:text-stone-200">¿Qué incluye mi boleto?</h3>
-                    <p class="text-stone-600 dark:text-stone-400">Tu boleto incluye acceso al evento, áreas de degustación, presentaciones musicales y actividades al aire libre. Algunos productos o experiencias como las Catas pueden tener costo adicional.</p>
+                    <p class="text-stone-600 dark:text-stone-400">Tu boleto incluye acceso al evento, áreas de
+                        degustación, presentaciones musicales y actividades al aire libre. Algunos productos o
+                        experiencias como las Catas pueden tener costo adicional.</p>
                 </div>
 
                 <div>
-                    <h3 class="text-lg font-semibold text-stone-700 dark:text-stone-200">¿Puedo salir y volver a entrar al evento?</h3>
+                    <h3 class="text-lg font-semibold text-stone-700 dark:text-stone-200">¿Puedo salir y volver a entrar
+                        al evento?</h3>
                     <p class="text-stone-600 dark:text-stone-400">Si, se permite el reingreso al evento.</p>
                 </div>
 
                 <div>
                     <h3 class="text-lg font-semibold text-stone-700 dark:text-stone-200">¿Qué pasa si llueve?</h3>
-                    <p class="text-stone-600 dark:text-stone-400">Grandezza Fest se realiza sin importar las condiciones climáticas. Te sugerimos venir preparado para el clima.</p>
+                    <p class="text-stone-600 dark:text-stone-400">Grandezza Fest se realiza sin importar las condiciones
+                        climáticas. Te sugerimos venir preparado para el clima.</p>
                 </div>
 
                 <div>
-                    <h3 class="text-lg font-semibold text-stone-700 dark:text-stone-200">¿Habrá opciones de alimentos?</h3>
-                    <p class="text-stone-600 dark:text-stone-400">Sí, contaremos con degustaciones de nuestros diversos patrocinadores. Consulta con cada proveedor dentro del festival.</p>
+                    <h3 class="text-lg font-semibold text-stone-700 dark:text-stone-200">¿Habrá opciones de
+                        alimentos?</h3>
+                    <p class="text-stone-600 dark:text-stone-400">Sí, contaremos con degustaciones de nuestros diversos
+                        patrocinadores. Consulta con cada proveedor dentro del festival.</p>
                 </div>
 
                 <div>
-                    <h3 class="text-lg font-semibold text-stone-700 dark:text-stone-200">¿Qué debo llevar al evento?</h3>
-                    <p class="text-stone-600 dark:text-stone-400">Es recomendable bloqueador solar, identificación oficial y buen ánimo. No está permitido el ingreso con alimentos, bebidas, armas o drogas.</p>
+                    <h3 class="text-lg font-semibold text-stone-700 dark:text-stone-200">¿Qué debo llevar al
+                        evento?</h3>
+                    <p class="text-stone-600 dark:text-stone-400">Es recomendable bloqueador solar, identificación
+                        oficial y buen ánimo. No está permitido el ingreso con alimentos, bebidas, armas o drogas.</p>
                 </div>
 
             </div>
@@ -307,6 +328,25 @@
             ></iframe>
         </div>
     </section>
+    <!--Boton flotante-->
+    <button id="eventbrite-widget-modal-trigger-1466057159429"
+            onclick="fbq('track', 'InitiateCheckout'); gtag('event', 'compra_iniciada', {event_category: 'boleto', event_label: 'grandezza_fest'}); gtag('event','conversion_event_begin_checkout')"
+            class="hidden fixed ctaButton bottom-6 right-6 z-50 bg-red-700 hover:bg-red-800 text-white font-semibold py-3 px-5 rounded-full shadow-lg transition-all duration-300 text-sm sm:text-base flex items-center gap-2">
+        <!-- Ícono SVG de boleto -->
+        <svg width="30px" height="30px" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+            <path fill="none" stroke="#ffffff" stroke-miterlimit="10" stroke-width="32"
+                  d="M366.05,146a46.7,46.7,0,0,1-2.42-63.42,3.87,3.87,0,0,0-.22-5.26L319.28,33.14a3.89,3.89,0,0,0-5.5,0l-70.34,70.34a23.62,23.62,0,0,0-5.71,9.24h0a23.66,23.66,0,0,1-14.95,15h0a23.7,23.7,0,0,0-9.25,5.71L33.14,313.78a3.89,3.89,0,0,0,0,5.5l44.13,44.13a3.87,3.87,0,0,0,5.26.22,46.69,46.69,0,0,1,65.84,65.84,3.87,3.87,0,0,0,.22,5.26l44.13,44.13a3.89,3.89,0,0,0,5.5,0l180.4-180.39a23.7,23.7,0,0,0,5.71-9.25h0a23.66,23.66,0,0,1,14.95-15h0a23.62,23.62,0,0,0,9.24-5.71l70.34-70.34a3.89,3.89,0,0,0,0-5.5l-44.13-44.13a3.87,3.87,0,0,0-5.26-.22A46.7,46.7,0,0,1,366.05,146Z"/>
+            <line fill="none" stroke="#FFFFFF" stroke-miterlimit="10" stroke-width="32" stroke-linecap="round" x1="250.5"
+                  y1="140.44" x2="233.99" y2="123.93"/>
+            <line fill="none" stroke="#FFFFFF" stroke-miterlimit="10" stroke-width="32" stroke-linecap="round" x1="294.52"
+                  y1="184.46" x2="283.51" y2="173.46"/>
+            <line fill="none" stroke="#FFFFFF" stroke-miterlimit="10" stroke-width="32" stroke-linecap="round" x1="338.54"
+                  y1="228.49" x2="327.54" y2="217.48"/>
+            <line fill="none" stroke="#FFFFFF" stroke-miterlimit="10" stroke-width="32" stroke-linecap="round" x1="388.07"
+                  y1="278.01" x2="371.56" y2="261.5"/>
+        </svg>
+        Comprar Boletos
+    </button>
 
     <!-- Footer -->
     <footer class="bg-black text-stone-400 text-center py-8">
@@ -364,6 +404,19 @@
             onOrderComplete: exampleCallback
         });
     </script>
+    <script>
+        const ctaButton = document.querySelector('.ctaButton');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 600) {
+                ctaButton.classList.remove('hidden');
+                ctaButton.classList.add('block');
+            } else {
+                ctaButton.classList.remove('block');
+                ctaButton.classList.add('hidden');
+            }
+        });
+    </script>
+
 @endpush
 @section('styles')
     <style type="text/css">
