@@ -5,18 +5,14 @@
 @section('image','https://grandezza.com.mx/img/grandezza-fest-2025.jpg')
 @section('url','https://grandezza.com.mx/gracias')
 @push('heads')
-
+    <!-- Google tag (gtag.js) event -->
     <script>
-        function enviarEventoCompra() {
-            gtag('event', 'compra_completata', {
-                'event_category': 'boton',
-                'event_label': 'boletos grandezza',
-                'value': 1
+        window.onload = function () {
+            gtag('event', 'conversion_event_purchase', {
+                // Aquí puedes agregar parámetros del evento, si los tienes
             });
-        }
-
+        };
     </script>
-
 @endpush
 @section('content')
     <div class="min-h-screen flex items-center justify-center px-4 py-10 bg-stone-900 text-stone-100">
