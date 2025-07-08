@@ -72,7 +72,8 @@
 
     </script>
     <!--<script src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script>-->
-    <script src="https://desk.zoho.com/portal/api/feedbackwidget/1156948000000362589?orgId=892657462&displayType=popout"></script>
+    <script
+        src="https://desk.zoho.com/portal/api/feedbackwidget/1156948000000362589?orgId=892657462&displayType=popout"></script>
 
 @endpush
 @section('content')
@@ -92,14 +93,10 @@
             <!-- Countdown -->
             <div id="countdown" class="countdown mb-8"
                  aria-label="Cuenta regresiva para el evento Grandezza Fest"></div>
-            <!-- Noscript content for added SEO -->
-            <noscript><a href="https://www.eventbrite.com/e/grandezza-fest-2025-tickets-1466057159429"
-                         rel="noopener noreferrer" target="_blank">Comprar entradas en Eventbrite</a></noscript>
-            <!-- You can customize this button any way you like -->
 
-            <a href="https://buy.stripe.com/cNi8wPaaKdeP3DL9yt4gg00" target="_blank"
-                    onclick="fbq('track', 'InitiateCheckout'); gtag('event', 'compra_iniciada', {event_category: 'boleto', event_label: 'grandezza_fest'}); gtag('event','conversion_event_begin_checkout')"
-                    class="inline-block bg-stone-600 hover:bg-stone-700 text-white px-10 py-4 rounded-full text-lg md:text-xl shadow-lg transition">
+            <a href="https://pay.grandezza.com.mx/b/cNi8wPaaKdeP3DL9yt4gg00" target="_blank"
+               onclick="fbq('track', 'InitiateCheckout'); gtag('event', 'compra_iniciada', {event_category: 'boleto', event_label: 'grandezza_fest'}); gtag('event','conversion_event_begin_checkout')"
+               class="inline-block bg-stone-600 hover:bg-stone-700 text-white px-10 py-4 rounded-full text-lg md:text-xl shadow-lg transition">
                 Compra tus entradas
             </a>
 
@@ -148,9 +145,9 @@
             No te quedes fuera del evento más esperado del año. Compra tus entradas ahora y prepárate para vivir una
             experiencia inolvidable.
         </p>
-        <a href="https://buy.stripe.com/cNi8wPaaKdeP3DL9yt4gg00" target="_blank"
-                onclick="fbq('track', 'InitiateCheckout'); gtag('event', 'compra_iniciada', {event_category: 'boleto', event_label: 'grandezza_fest'}); gtag('event','conversion_event_begin_checkout')"
-                class="inline-block bg-white text-stone-700 px-12 py-5 rounded-full font-semibold text-large md:text-2xl shadow-lg hover:bg-stone-100 transition">
+        <a href="https://pay.grandezza.com.mx/b/cNi8wPaaKdeP3DL9yt4gg00" target="_blank"
+           onclick="fbq('track', 'InitiateCheckout'); gtag('event', 'compra_iniciada', {event_category: 'boleto', event_label: 'grandezza_fest'}); gtag('event','conversion_event_begin_checkout')"
+           class="inline-block bg-white text-stone-700 px-12 py-5 rounded-full font-semibold text-large md:text-2xl shadow-lg hover:bg-stone-100 transition">
             Comprar Entradas
         </a>
     </section>
@@ -213,7 +210,8 @@
                 <div>
                     <h3 class="text-lg font-semibold text-stone-700 dark:text-stone-200">¿Habrá estacionamiento
                         disponible?</h3>
-                    <p class="text-stone-600 dark:text-stone-400">Sí, contamos con estacionamiento sin costo para asistentes. Se
+                    <p class="text-stone-600 dark:text-stone-400">Sí, contamos con estacionamiento sin costo para
+                        asistentes. Se
                         asignará por orden de llegada hasta agotar espacios.</p>
                 </div>
 
@@ -226,9 +224,9 @@
 
                 <div>
                     <h3 class="text-lg font-semibold text-stone-700 dark:text-stone-200">¿Qué incluye mi boleto?</h3>
-                    <p class="text-stone-600 dark:text-stone-400">Tu boleto incluye acceso al evento, áreas de
-                        degustación, presentaciones musicales y actividades al aire libre. Algunos productos o
-                        experiencias como las Catas pueden tener costo adicional.</p>
+                    <p class="text-stone-600 dark:text-stone-400">Tu boleto incluye acceso al evento, degustaciones de
+                        más de 100 etiquetas de vinos nacionales e internacionales, además de música en vivo y sets de
+                        DJ. </p>
                 </div>
 
                 <div>
@@ -246,8 +244,9 @@
                 <div>
                     <h3 class="text-lg font-semibold text-stone-700 dark:text-stone-200">¿Habrá opciones de
                         alimentos?</h3>
-                    <p class="text-stone-600 dark:text-stone-400">Sí, contaremos con degustaciones de nuestros diversos
-                        patrocinadores. Consulta con cada proveedor dentro del festival.</p>
+                    <p class="text-stone-600 dark:text-stone-400">Sí, habrá diversas opciones disponibles a través de
+                        nuestros socios comerciales, las cuales tendrán un costo adicional. Te invitamos a consultar
+                        directamente con cada proveedor dentro del festival.</p>
                 </div>
 
                 <div>
@@ -329,20 +328,24 @@
         </div>
     </section>
     <!--Boton flotante-->
-    <a href="https://buy.stripe.com/cNi8wPaaKdeP3DL9yt4gg00" target="_blank"
-            onclick="fbq('track', 'InitiateCheckout'); gtag('event', 'compra_iniciada', {event_category: 'boleto', event_label: 'grandezza_fest'}); gtag('event','conversion_event_begin_checkout')"
-            class="hidden fixed ctaButton bottom-6 right-6 z-50 bg-red-700 hover:bg-red-800 text-white font-semibold py-3 px-5 rounded-full shadow-lg transition-all duration-300 text-sm sm:text-base flex items-center gap-2">
+    <a href="https://pay.grandezza.com.mx/b/cNi8wPaaKdeP3DL9yt4gg00" target="_blank"
+       onclick="fbq('track', 'InitiateCheckout'); gtag('event', 'compra_iniciada', {event_category: 'boleto', event_label: 'grandezza_fest'}); gtag('event','conversion_event_begin_checkout')"
+       class="hidden fixed ctaButton bottom-6 right-6 z-50 bg-red-700 hover:bg-red-800 text-white font-semibold py-3 px-5 rounded-full shadow-lg transition-all duration-300 text-sm sm:text-base flex items-center gap-2">
         <!-- Ícono SVG de boleto -->
         <svg width="30px" height="30px" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
             <path fill="none" stroke="#ffffff" stroke-miterlimit="10" stroke-width="32"
                   d="M366.05,146a46.7,46.7,0,0,1-2.42-63.42,3.87,3.87,0,0,0-.22-5.26L319.28,33.14a3.89,3.89,0,0,0-5.5,0l-70.34,70.34a23.62,23.62,0,0,0-5.71,9.24h0a23.66,23.66,0,0,1-14.95,15h0a23.7,23.7,0,0,0-9.25,5.71L33.14,313.78a3.89,3.89,0,0,0,0,5.5l44.13,44.13a3.87,3.87,0,0,0,5.26.22,46.69,46.69,0,0,1,65.84,65.84,3.87,3.87,0,0,0,.22,5.26l44.13,44.13a3.89,3.89,0,0,0,5.5,0l180.4-180.39a23.7,23.7,0,0,0,5.71-9.25h0a23.66,23.66,0,0,1,14.95-15h0a23.62,23.62,0,0,0,9.24-5.71l70.34-70.34a3.89,3.89,0,0,0,0-5.5l-44.13-44.13a3.87,3.87,0,0,0-5.26-.22A46.7,46.7,0,0,1,366.05,146Z"/>
-            <line fill="none" stroke="#FFFFFF" stroke-miterlimit="10" stroke-width="32" stroke-linecap="round" x1="250.5"
+            <line fill="none" stroke="#FFFFFF" stroke-miterlimit="10" stroke-width="32" stroke-linecap="round"
+                  x1="250.5"
                   y1="140.44" x2="233.99" y2="123.93"/>
-            <line fill="none" stroke="#FFFFFF" stroke-miterlimit="10" stroke-width="32" stroke-linecap="round" x1="294.52"
+            <line fill="none" stroke="#FFFFFF" stroke-miterlimit="10" stroke-width="32" stroke-linecap="round"
+                  x1="294.52"
                   y1="184.46" x2="283.51" y2="173.46"/>
-            <line fill="none" stroke="#FFFFFF" stroke-miterlimit="10" stroke-width="32" stroke-linecap="round" x1="338.54"
+            <line fill="none" stroke="#FFFFFF" stroke-miterlimit="10" stroke-width="32" stroke-linecap="round"
+                  x1="338.54"
                   y1="228.49" x2="327.54" y2="217.48"/>
-            <line fill="none" stroke="#FFFFFF" stroke-miterlimit="10" stroke-width="32" stroke-linecap="round" x1="388.07"
+            <line fill="none" stroke="#FFFFFF" stroke-miterlimit="10" stroke-width="32" stroke-linecap="round"
+                  x1="388.07"
                   y1="278.01" x2="371.56" y2="261.5"/>
         </svg>
         Comprar Boletos
