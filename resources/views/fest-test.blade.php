@@ -72,6 +72,7 @@
 
     </script>
     <!--<script src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script>-->
+    <script src="https://desk.zoho.com/portal/api/feedbackwidget/1156948000000362589?orgId=892657462&displayType=popout"></script>
 
 @endpush
 @section('content')
@@ -212,7 +213,7 @@
                 <div>
                     <h3 class="text-lg font-semibold text-stone-700 dark:text-stone-200">¿Habrá estacionamiento
                         disponible?</h3>
-                    <p class="text-stone-600 dark:text-stone-400">Sí, contamos con estacionamiento para asistentes. Se
+                    <p class="text-stone-600 dark:text-stone-400">Sí, contamos con estacionamiento sin costo para asistentes. Se
                         asignará por orden de llegada hasta agotar espacios.</p>
                 </div>
 
