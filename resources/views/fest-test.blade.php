@@ -2,9 +2,15 @@
 @section('title','Grandezza Fest 2025 | Festival de vino y música en Zempoala')
 @section('description','Únete a la tercera edición de Grandezza Fest en Hacienda San Juan Pueblilla, Zempoala, Hidalgo. Vino, música, gastronomía y más. Entradas $500.')
 @section('keywords','Grandezza Fest, festival de vino, vino en Hidalgo, eventos Zempoala, Hacienda San Juan Pueblilla, vino y música, catas de vino, evento gourmet, agosto 2025')
-@section('image','https://grandezza.com.mx/img/grandezza-fest-2025.jpg')
+@section('image','https://grandezza.com.mx/img/banner-grandezza.jpg')
 @section('url','https://grandezza.com.mx/fest')
 @push('heads')
+    <!-- Opcional pero recomendado -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Grandezza Fest 2025 – Música, vino y naturaleza">
+    <meta name="twitter:description"
+          content="Este 2 de agosto, vive una experiencia inolvidable en Zempoala. Música, gastronomía y más.">
+    <meta name="twitter:image" content="{{asset('/img/banner-grandezza.jpg')}}">
     <script type="application/ld+json">
         {
           "@context": "https://schema.org",
@@ -27,7 +33,7 @@
             }
           },
           "image": [
-            "https://grandezza.com.mx/img/grandezza-fest-2025.jpg"
+            "https://grandezza.com.mx/img/banner-grandezza.jpg"
           ],
           "description": "La tercera edición de Grandezza Fest, con catas, degustaciones, música y los mejores exponentes del vino.",
           "url": "https://grandezza.com.mx/fest",
@@ -72,6 +78,7 @@
 
     </script>
     <!--<script src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script>-->
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
     <script
         src="https://desk.zoho.com/portal/api/feedbackwidget/1156948000000362589?orgId=892657462&displayType=popout"></script>
 
@@ -92,7 +99,9 @@
 
             <!-- Countdown -->
             <div id="countdown" class="countdown mb-8"
-                 aria-label="Cuenta regresiva para el evento Grandezza Fest"></div>
+                 aria-label="Cuenta regresiva para el evento Grandezza Fest">
+
+            </div>
 
             <a href="https://pay.grandezza.com.mx/b/cNi8wPaaKdeP3DL9yt4gg00" target="_blank"
                onclick="fbq('track', 'InitiateCheckout'); gtag('event', 'compra_iniciada', {event_category: 'boleto', event_label: 'grandezza_fest'}); gtag('event','conversion_event_begin_checkout')"
@@ -182,12 +191,14 @@
                 <div>
                     <h3 class="text-lg font-semibold text-stone-700 dark:text-stone-200">¿Dónde y cuándo se realiza el
                         evento?</h3>
-                    <p class="text-stone-600 dark:text-stone-400">Grandezza Fest 2025 se llevará a cabo el sábado 2 de
-                        agosto en la Hacienda San Juan Pueblilla, ubicada en Zempoala, Hidalgo.</p>
+                    <p class="text-stone-600 dark:text-stone-400">Grandezza Fest 2025 se llevará a cabo el <span
+                            class="text-amber-600 dark:text-amber-400">sábado 2 de
+                        agosto en la Hacienda San Juan Pueblilla</span>, ubicada en Zempoala, Hidalgo.</p>
                 </div>
                 <div>
                     <h3 class="text-lg font-semibold text-stone-700 dark:text-stone-200">¿Costo del Boleto?</h3>
-                    <p class="text-stone-600 dark:text-stone-400">La <b>preventa es de $500 pesos</b>, el dia del evento
+                    <p class="text-stone-600 dark:text-stone-400">La <span class="text-amber-600 dark:text-amber-400">preventa es de $500 pesos</span>,
+                        el dia del evento
                         costará <b>$600 pesos</b>.</p>
                 </div>
 
@@ -202,15 +213,16 @@
                     <h3 class="text-lg font-semibold text-stone-700 dark:text-stone-200">¿Puedo comprar boletos en el
                         lugar?</h3>
                     <p class="text-stone-600 dark:text-stone-400">Si habrá taquilla en el evento, te recomendamos
-                        adquirir tus boletos en línea a través de <a href="https://grandezza.com.mx/fest"
-                                                                     class="text-blue-600 dark:text-blue-400 underline">grandezza.com.mx</a>,
+                        adquirir en preventa tus boletos en línea a través de <a href="https://grandezza.com.mx/fest"
+                                                                                 class="text-amber-600 dark:text-amber-400">grandezza.com.mx</a>,
                         ya que el cupo es limitado.</p>
                 </div>
 
                 <div>
                     <h3 class="text-lg font-semibold text-stone-700 dark:text-stone-200">¿Habrá estacionamiento
                         disponible?</h3>
-                    <p class="text-stone-600 dark:text-stone-400">Sí, contamos con estacionamiento sin costo para
+                    <p class="text-stone-600 dark:text-stone-400">Sí, contamos con <span
+                            class="text-amber-600 dark:text-amber-400">estacionamiento sin costo</span> para
                         asistentes. Se
                         asignará por orden de llegada hasta agotar espacios.</p>
                 </div>
@@ -218,14 +230,17 @@
                 <div>
                     <h3 class="text-lg font-semibold text-stone-700 dark:text-stone-200">¿Pueden asistir menores de
                         edad?</h3>
-                    <p class="text-stone-600 dark:text-stone-400">El evento es para mayores de 18 años. Se solicitará
+                    <p class="text-stone-600 dark:text-stone-400">El evento es para <span
+                            class="text-amber-600 dark:text-amber-400">mayores de 18 años</span>. Se solicitará
                         identificación oficial en el acceso.</p>
                 </div>
 
                 <div>
                     <h3 class="text-lg font-semibold text-stone-700 dark:text-stone-200">¿Qué incluye mi boleto?</h3>
-                    <p class="text-stone-600 dark:text-stone-400">Tu boleto incluye acceso al evento, degustaciones de
-                        más de 100 etiquetas de vinos nacionales e internacionales, además de música en vivo y sets de
+                    <p class="text-stone-600 dark:text-stone-400">Tu boleto incluye acceso al evento, <span
+                            class="text-amber-600 dark:text-amber-400">degustaciones de
+                        más de 100 etiquetas</span> de vinos nacionales e internacionales, además de música en vivo y
+                        sets de
                         DJ. </p>
                 </div>
 
@@ -315,7 +330,7 @@
             Hidalgo</p>
         <p class="text-white text-center mb-4">Domicilio Conocido Sn, Pueblilla, 24060 Zempoala, Hgo. <a
                 class="btn underline" href="https://maps.app.goo.gl/GW5Z4dh2AMk4kAY98"
-                target="_blank"><strong class="text-red-500">Mapa</strong></a></p>
+                target="_blank"><strong class="text-amber-500">Mapa</strong></a></p>
         <div class="w-full max-w-5xl mx-auto aspect-video rounded-xl overflow-hidden shadow-lg">
             <iframe
                 class="w-full h-full"
@@ -350,6 +365,59 @@
         </svg>
         Comprar Boletos
     </a>
+
+    <!-- Incluye Alpine.js si no lo tienes -->
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+
+    <!-- FAB flotante para compartir -->
+    <div x-data="{ open: false }" class="fixed bottom-5 left-5 z-50">
+        <!-- Botones sociales -->
+        <div x-show="open" class="flex flex-col items-end space-y-2 mb-2" x-transition>
+            <!-- WhatsApp -->
+            <a href="https://api.whatsapp.com/send?text=¡No te pierdas este evento! https://grandezza.com.mx/fest"
+               target="_blank"
+               class="bg-green-500 hover:bg-green-600 text-white p-3 rounded-full shadow-lg">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+                    <path
+                        d="M20.52 3.48A11.93 11.93 0 0012 0C5.37 0 0 5.37 0 12a11.9 11.9 0 001.63 6L0 24l6.37-1.66A11.9 11.9 0 0012 24c6.63 0 12-5.37 12-12a11.93 11.93 0 00-3.48-8.52zM12 22c-1.6 0-3.13-.37-4.5-1.05l-.32-.17-3.77.98 1-3.65-.2-.34A9.87 9.87 0 012 12c0-5.52 4.48-10 10-10s10 4.48 10 10-4.48 10-10 10zm5.45-7.24c-.3-.15-1.77-.87-2.05-.96-.27-.1-.47-.15-.66.15s-.76.96-.93 1.16c-.17.2-.34.22-.63.07a8.28 8.28 0 01-2.43-1.5 9.22 9.22 0 01-1.7-2.13c-.18-.3 0-.46.13-.6.13-.13.3-.34.44-.5.15-.17.2-.29.3-.49.1-.2.05-.37-.02-.52-.08-.15-.66-1.6-.91-2.2-.24-.6-.49-.5-.66-.5-.17 0-.37-.02-.57-.02s-.52.07-.8.37c-.27.3-1.04 1.02-1.04 2.5 0 1.47 1.07 2.9 1.22 3.1.15.2 2.11 3.22 5.1 4.51.71.3 1.26.48 1.7.61.72.23 1.37.2 1.88.12.58-.08 1.77-.72 2.02-1.42.25-.7.25-1.29.17-1.42-.09-.13-.27-.2-.57-.35z"/>
+                </svg>
+            </a>
+
+            <!-- Facebook -->
+            <a href="https://www.facebook.com/sharer/sharer.php?u=https://grandezza.com.mx/fest"
+               target="_blank"
+               class="bg-blue-600 hover:bg-blue-700 text-white p-3 rounded-full shadow-lg">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+                    <path
+                        d="M22.675 0H1.325C.593 0 0 .593 0 1.326v21.348C0 23.406.593 24 1.325 24h11.495v-9.294H9.692V11.01h3.128V8.413c0-3.1 1.894-4.788 4.659-4.788 1.325 0 2.464.099 2.795.143v3.24h-1.918c-1.504 0-1.796.716-1.796 1.765v2.314h3.59l-.467 3.696h-3.123V24h6.116C23.407 24 24 23.407 24 22.674V1.326C24 .593 23.407 0 22.675 0z"/>
+                </svg>
+            </a>
+
+            <!-- Twitter / X -->
+            <a href="https://twitter.com/intent/tweet?text=¡No te pierdas este evento!&url=https://grandezza.com.mx/fest"
+               target="_blank"
+               class="bg-black hover:bg-gray-900 text-white p-3 rounded-full shadow-lg">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+                    <path
+                        d="M22.46 6c-.77.35-1.6.58-2.46.69a4.22 4.22 0 001.84-2.33 8.27 8.27 0 01-2.65 1.02A4.14 4.14 0 0015.5 4c-2.28 0-4.13 1.86-4.13 4.15 0 .33.03.66.1.97-3.44-.17-6.49-1.83-8.54-4.34a4.15 4.15 0 00-.56 2.09c0 1.44.73 2.7 1.84 3.44a4.08 4.08 0 01-1.87-.52v.05c0 2.01 1.42 3.69 3.3 4.07a4.2 4.2 0 01-1.85.07c.52 1.64 2.02 2.84 3.8 2.88A8.3 8.3 0 012 19.54a11.68 11.68 0 006.29 1.84c7.55 0 11.68-6.26 11.68-11.68l-.01-.53A8.18 8.18 0 0024 5.56a8.3 8.3 0 01-2.36.65 4.1 4.1 0 001.8-2.27z"/>
+                </svg>
+            </a>
+        </div>
+
+        <!-- Botón FAB principal -->
+        <button @click="open = !open"
+                class="bg-amber-600 hover:bg-amber-700 text-white p-4 rounded-full shadow-xl focus:outline-none transition-all">
+            <svg x-show="!open" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
+                 viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/>
+            </svg>
+            <svg x-show="open" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
+                 viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 6L6 18M6 6l12 12"/>
+            </svg>
+        </button>
+    </div>
+
 
     <!-- Footer -->
     <footer class="bg-black text-stone-400 text-center py-8">
@@ -433,7 +501,7 @@
         }
 
         .countdown > div {
-            background: #b91c1c;
+            background: #bb8a69;
             padding: 1rem 1.5rem;
             border-radius: 0.75rem;
             text-align: center;
@@ -455,7 +523,7 @@
             margin-top: 0.25rem;
             text-transform: uppercase;
             letter-spacing: 0.05em;
-            color: #f87171;
+            color: #fbdfcc;
         }
 
         .font-alt {
@@ -468,7 +536,6 @@
             }
 
         }
-
     </style>
 @endsection
 

@@ -22,10 +22,12 @@
     <meta name="description" content="@yield('description')">
     <meta name="keywords" content="@yield('keywords')">
     <meta name="author" content="massuttier">
-    <meta property="og:title" content="Grandezza @yield('title')">
+    <meta property="og:title" content="@yield('title')">
     <meta property="og:description" content="@yield('description')">
     <meta property="og:image" content="@yield('image')">
     <meta property="og:url" content="@yield('url')">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="@yield('title')">
     <link rel="canonical" href="@yield('url')"/>
     <link rel="icon" href="/img/favicon.png" type="image/png"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
