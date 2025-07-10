@@ -29,7 +29,7 @@
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="@yield('title')">
     <link rel="canonical" href="@yield('url')"/>
-    <link rel="icon" href="/img/favicon.png" type="image/png"/>
+    <link rel="icon" href="{{asset('/img/favicon.png')}}" type="image/png"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -82,7 +82,7 @@
     <!-- End Meta Pixel Code -->
     @stack('heads')
 </head>
-<body class="bg-black text-white">
+<body class="bg-white dark:bg-black text-white">
 <!-- Google Tag Manager (noscript) -->
 <noscript>
     <iframe src="https://www.googletagmanager.com/ns.html?id={{ config('services.gtm.id') }}"
