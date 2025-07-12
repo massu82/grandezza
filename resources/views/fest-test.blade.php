@@ -193,18 +193,14 @@
     <!-- Call to Action / Boletos -->
     <section id="boletos" class="py-20 px-6 bg-stone-900 text-center">
         <h2 class="text-4xl md:text-5xl mb-6 tracking-wide font-alt">Tercera edición de Grandezza Fest</h2>
-        <p class="text-xl max-w-4xl mx-auto mb-8 text-stone-200">
+        <p class="text-sm md:text-lg max-w-4xl mx-auto mb-8 text-stone-200">
             Descubre el mejor evento dedicado al vino y los licores en un entorno espectacular. Vive catas exclusivas,
             música en vivo, gastronomía de primer nivel y un ambiente único en la Hacienda San Juan Pueblilla.
             Grandezza, tu tienda de vinos y licores favorita, te invita a esta gran celebración.
         </p>
-        <p class="text-xl max-w-xl mx-auto mb-8 text-stone-200">
-            No te quedes fuera del evento más esperado del año. Compra tus entradas ahora y prepárate para vivir una
-            experiencia inolvidable.
-        </p>
         <a href="https://pay.grandezza.com.mx/b/cNi8wPaaKdeP3DL9yt4gg00" target="_blank"
            onclick="fbq('track', 'InitiateCheckout'); gtag('event', 'compra_iniciada', {event_category: 'boleto', event_label: 'grandezza_fest'}); gtag('event','conversion_event_begin_checkout')"
-           class="inline-block bg-amber-600 text-white px-12 py-5 rounded-full font-regular text-large md:text-2xl shadow-lg hover:bg-stone-100 transition">
+           class="inline-block bg-amber-600 text-white px-12 py-5 rounded-full font-regular text-large md:text-2xl shadow-lg hover:bg-amber-700 transition">
             Preventa de Boletos
         </a>
     </section>
