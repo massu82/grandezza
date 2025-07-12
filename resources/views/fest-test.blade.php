@@ -81,6 +81,8 @@
     <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
     <script
         src="https://desk.zoho.com/portal/api/feedbackwidget/1156948000000362589?orgId=892657462&displayType=popout"></script>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 
 @endpush
 @section('content')
@@ -105,8 +107,8 @@
 
             <a href="https://pay.grandezza.com.mx/b/cNi8wPaaKdeP3DL9yt4gg00" target="_blank"
                onclick="fbq('track', 'InitiateCheckout'); gtag('event', 'compra_iniciada', {event_category: 'boleto', event_label: 'grandezza_fest'}); gtag('event','conversion_event_begin_checkout')"
-               class="inline-block bg-stone-600 hover:bg-stone-700 text-white px-10 py-4 rounded-full text-lg md:text-xl shadow-lg transition">
-                Compra tus entradas
+               class="inline-block bg-amber-600 hover:bg-amber-600 text-white px-10 py-4 rounded-full text-lg md:text-xl shadow-lg transition">
+                Preventa de Boletos
             </a>
 
         </div>
@@ -121,16 +123,57 @@
             </a>
         </div>
     </section>
-
-    <!-- Descripción -->
-    <section class="py-20 px-6 max-w-5xl mx-auto text-center">
-        <h2 class="text-4xl md:text-5xl mb-6 tracking-wide font-alt">Tercera edición de Grandezza Fest</h2>
-        <p class="text-sm md:text-xl leading-relaxed max-w-3xl mx-auto text-stone-300">
-            Descubre el mejor evento dedicado al vino y los licores en un entorno espectacular. Vive catas exclusivas,
-            música en vivo, gastronomía de primer nivel y un ambiente único en la Hacienda San Juan Pueblilla.
-            Grandezza, tu tienda de vinos y licores favorita, te invita a esta gran celebración.
-        </p>
+    <section class="bg-stone-800 py-25 sm:py-32">
+        <div class="mx-auto max-w-7xl px-6 lg:px-8">
+            <dl class="grid grid-cols-1 gap-x-8 gap-y-16 text-center lg:grid-cols-3">
+                <div class="mx-auto flex max-w-xs flex-col gap-y-4">
+                    <dt class="text-base/5 text-stone-400">Nacionales e internacionales de las mejores marcas</dt>
+                    <dd class="order-first text-2xl font-semibold tracking-tight text-white sm:text-3xl">Degustaciones
+                        de +100 etiquetas
+                    </dd>
+                </div>
+                <div class="mx-auto flex max-w-xs flex-col gap-y-4">
+                    <dt class="text-base/5 text-stone-400">Musica en vivo, DJ, lo mejor de la gastronomía y otras
+                        sorpresas
+                    </dt>
+                    <dd class="order-first text-2xl font-semibold tracking-tight text-white sm:text-3xl">Vino, Música y
+                        Gastronomía.
+                    </dd>
+                </div>
+                <div class="mx-auto flex max-w-xs flex-col gap-y-4">
+                    <dt class="text-base/5 text-stone-400">El costo de Preventa es de $500, Taquilla $600</dt>
+                    <dd class="order-first text-2xl font-semibold tracking-tight text-white sm:text-3xl">Evento
+                        Exclusivo y Accesible
+                    </dd>
+                </div>
+            </dl>
+        </div>
     </section>
+    <!-- Patrocinadores -->
+    <section class="py-16 px-6 bg-stone-800 dark:bg-black">
+        <h2 class="text-4xl md:text-5xl mb-6 tracking-wide font-alt text-center">Patrocinadores</h2>
+        <div class="swiper mySwiper max-w-7xl">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="/img/patrocinadores/logo-01.webp" alt="Patrocinador"/></div>
+                <div class="swiper-slide"><img src="/img/patrocinadores/logo-02.webp" alt="Patrocinador"/></div>
+                <div class="swiper-slide"><img src="/img/patrocinadores/logo-03.webp" alt="Patrocinador"/></div>
+                <div class="swiper-slide"><img src="/img/patrocinadores/logo-04.webp" alt="Patrocinador"/></div>
+                <div class="swiper-slide"><img src="/img/patrocinadores/logo-05.webp" alt="Patrocinador"/></div>
+                <div class="swiper-slide"><img src="/img/patrocinadores/logo-06.webp" alt="Patrocinador"/></div>
+                <div class="swiper-slide"><img src="/img/patrocinadores/logo-07.webp" alt="Patrocinador"/></div>
+                <div class="swiper-slide"><img src="/img/patrocinadores/logo-08.webp" alt="Patrocinador"/></div>
+                <div class="swiper-slide"><img src="/img/patrocinadores/logo-09.webp" alt="Patrocinador"/></div>
+                <div class="swiper-slide"><img src="/img/patrocinadores/logo-10.webp" alt="Patrocinador"/></div>
+                <div class="swiper-slide"><img src="/img/patrocinadores/logo-11.webp" alt="Patrocinador"/></div>
+                <div class="swiper-slide"><img src="/img/patrocinadores/logo-12.webp" alt="Patrocinador"/></div>
+                <div class="swiper-slide"><img src="/img/patrocinadores/logo-13.webp" alt="Patrocinador"/></div>
+                <div class="swiper-slide"><img src="/img/patrocinadores/logo-14.webp" alt="Patrocinador"/></div>
+                <div class="swiper-slide"><img src="/img/patrocinadores/logo-15.webp" alt="Patrocinador"/></div>
+                <div class="swiper-slide"><img src="/img/patrocinadores/logo-16.webp" alt="Patrocinador"/></div>
+            </div>
+        </div>
+    </section>
+
 
     <!-- Video Promocional -->
     <section class="bg-stone-800 py-16 px-6 flex justify-center">
@@ -149,40 +192,23 @@
 
     <!-- Call to Action / Boletos -->
     <section id="boletos" class="py-20 px-6 bg-stone-900 text-center">
-        <h2 class="text-4xl md:text-5xl mb-6 tracking-wide font-alt">¡Asegura tu lugar ahora!</h2>
+        <h2 class="text-4xl md:text-5xl mb-6 tracking-wide font-alt">Tercera edición de Grandezza Fest</h2>
+        <p class="text-xl max-w-4xl mx-auto mb-8 text-stone-200">
+            Descubre el mejor evento dedicado al vino y los licores en un entorno espectacular. Vive catas exclusivas,
+            música en vivo, gastronomía de primer nivel y un ambiente único en la Hacienda San Juan Pueblilla.
+            Grandezza, tu tienda de vinos y licores favorita, te invita a esta gran celebración.
+        </p>
         <p class="text-xl max-w-xl mx-auto mb-8 text-stone-200">
             No te quedes fuera del evento más esperado del año. Compra tus entradas ahora y prepárate para vivir una
             experiencia inolvidable.
         </p>
         <a href="https://pay.grandezza.com.mx/b/cNi8wPaaKdeP3DL9yt4gg00" target="_blank"
            onclick="fbq('track', 'InitiateCheckout'); gtag('event', 'compra_iniciada', {event_category: 'boleto', event_label: 'grandezza_fest'}); gtag('event','conversion_event_begin_checkout')"
-           class="inline-block bg-white text-stone-700 px-12 py-5 rounded-full font-semibold text-large md:text-2xl shadow-lg hover:bg-stone-100 transition">
-            Comprar Entradas
+           class="inline-block bg-amber-600 text-white px-12 py-5 rounded-full font-regular text-large md:text-2xl shadow-lg hover:bg-stone-100 transition">
+            Preventa de Boletos
         </a>
     </section>
 
-    <!-- Patrocinadores -->
-    <section class="py-16 px-6 bg-stone-800 dark:bg-black">
-        <h2 class="text-4xl md:text-5xl mb-6 tracking-wide font-alt text-center">Patrocinadores</h2>
-        <div class="grid grid-cols-3 md:grid-cols-5 lg:grid-cols-6 gap-6 items-center max-w-8xl mx-auto">
-            <img src="/img/patrocinadores/logo-05.webp" alt="Patrocinador" class="h-22 object-contain mx-auto"/>
-            <img src="/img/patrocinadores/logo-01.webp" alt="Patrocinador" class="h-22 object-contain mx-auto"/>
-            <img src="/img/patrocinadores/logo-02.webp" alt="Patrocinador" class="h-22 object-contain mx-auto"/>
-            <img src="/img/patrocinadores/logo-03.webp" alt="Patrocinador" class="h-22 object-contain mx-auto"/>
-            <img src="/img/patrocinadores/logo-04.webp" alt="Patrocinador" class="h-22 object-contain mx-auto"/>
-            <img src="/img/patrocinadores/logo-06.webp" alt="Patrocinador" class="h-22 object-contain mx-auto"/>
-            <img src="/img/patrocinadores/logo-07.webp" alt="Patrocinador" class="h-22 object-contain mx-auto"/>
-            <img src="/img/patrocinadores/logo-08.webp" alt="Patrocinador" class="h-22 object-contain mx-auto"/>
-            <img src="/img/patrocinadores/logo-09.webp" alt="Patrocinador" class="h-22 object-contain mx-auto"/>
-            <img src="/img/patrocinadores/logo-10.webp" alt="Patrocinador" class="h-22 object-contain mx-auto"/>
-            <img src="/img/patrocinadores/logo-11.webp" alt="Patrocinador" class="h-22 object-contain mx-auto"/>
-            <img src="/img/patrocinadores/logo-12.webp" alt="Patrocinador" class="h-22 object-contain mx-auto"/>
-            <img src="/img/patrocinadores/logo-13.webp" alt="Patrocinador" class="h-22 object-contain mx-auto"/>
-            <img src="/img/patrocinadores/logo-14.webp" alt="Patrocinador" class="h-22 object-contain mx-auto"/>
-            <img src="/img/patrocinadores/logo-15.webp" alt="Patrocinador" class="h-22 object-contain mx-auto"/>
-            <img src="/img/patrocinadores/logo-16.webp" alt="Patrocinador" class="h-22 object-contain mx-auto"/>
-        </div>
-    </section>
     <section id="faq" class="bg-white dark:bg-stone-800 py-16 px-4 sm:px-8 lg:px-24">
         <div class="max-w-5xl mx-auto">
             <h2 class="text-4xl md:text-5xl mb-6 tracking-wide font-alt text-center">Preguntas Frecuentes</h2>
@@ -275,9 +301,27 @@
         </div>
     </section>
 
-
-    <!-- Hospedaje -->
+    <!-- Mapa -->
     <section class="py-20 px-6 bg-stone-900">
+        <h2 class="text-4xl md:text-5xl mb-6 tracking-wide font-alt text-center">¿Cómo llegar?</h2>
+        <p class="text-xl md:text-2xl text-center tracking-wide">Hacienda San Juan Pueblilla · Zempoala,
+            Hidalgo</p>
+        <p class="text-white text-center mb-4">Domicilio Conocido Sn, Pueblilla, 24060 Zempoala, Hgo. <a
+                class="btn underline" href="https://maps.app.goo.gl/GW5Z4dh2AMk4kAY98"
+                target="_blank"><strong class="text-amber-500">Mapa</strong></a></p>
+        <div class="w-full max-w-5xl mx-auto aspect-video rounded-xl overflow-hidden shadow-lg">
+            <iframe
+                class="w-full h-full"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3750.987015754603!2d-98.65529402300066!3d19.924951981462378!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1baa6e0fb8ba1%3A0x27ced92115fc730e!2sHacienda%20San%20Juan%20Pueblilla!5e0!3m2!1ses!2smx!4v1750123853462!5m2!1ses!2smx"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                title="Mapa de Hacienda San Juan Pueblilla"
+            ></iframe>
+        </div>
+    </section>
+    <!-- Hospedaje -->
+    <section class="py-20 px-6 bg-stone-800">
         <h2 class="text-4xl md:text-5xl mb-6 tracking-wide font-alt text-center">Hospedaje Cercano</h2>
         <p class="text-center max-w-3xl mx-auto mb-12 text-stone-300 text-lg">
             Te recomendamos reservar con anticipación en hoteles y cabañas cercanas a Zempoala para una mejor
@@ -322,30 +366,32 @@
             </li>
         </ul>
     </section>
-
-    <!-- Mapa -->
-    <section class="py-20 px-6 bg-stone-800">
-        <h2 class="text-4xl md:text-5xl mb-6 tracking-wide font-alt text-center">¿Cómo llegar?</h2>
-        <p class="text-xl md:text-2xl text-center tracking-wide">Hacienda San Juan Pueblilla · Zempoala,
-            Hidalgo</p>
-        <p class="text-white text-center mb-4">Domicilio Conocido Sn, Pueblilla, 24060 Zempoala, Hgo. <a
-                class="btn underline" href="https://maps.app.goo.gl/GW5Z4dh2AMk4kAY98"
-                target="_blank"><strong class="text-amber-500">Mapa</strong></a></p>
-        <div class="w-full max-w-5xl mx-auto aspect-video rounded-xl overflow-hidden shadow-lg">
-            <iframe
-                class="w-full h-full"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3750.987015754603!2d-98.65529402300066!3d19.924951981462378!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1baa6e0fb8ba1%3A0x27ced92115fc730e!2sHacienda%20San%20Juan%20Pueblilla!5e0!3m2!1ses!2smx!4v1750123853462!5m2!1ses!2smx"
-                allowfullscreen=""
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
-                title="Mapa de Hacienda San Juan Pueblilla"
-            ></iframe>
+    <!-- Patrocinadores -->
+    <section class="py-16 px-6 bg-stone-800 dark:bg-black">
+        <h2 class="text-4xl md:text-5xl mb-6 tracking-wide font-alt text-center">Patrocinadores</h2>
+        <div class="grid grid-cols-3 md:grid-cols-5 lg:grid-cols-6 gap-6 items-center max-w-8xl mx-auto">
+            <img src="/img/patrocinadores/logo-05.webp" alt="Patrocinador" class="h-22 object-contain mx-auto"/>
+            <img src="/img/patrocinadores/logo-01.webp" alt="Patrocinador" class="h-22 object-contain mx-auto"/>
+            <img src="/img/patrocinadores/logo-02.webp" alt="Patrocinador" class="h-22 object-contain mx-auto"/>
+            <img src="/img/patrocinadores/logo-03.webp" alt="Patrocinador" class="h-22 object-contain mx-auto"/>
+            <img src="/img/patrocinadores/logo-04.webp" alt="Patrocinador" class="h-22 object-contain mx-auto"/>
+            <img src="/img/patrocinadores/logo-06.webp" alt="Patrocinador" class="h-22 object-contain mx-auto"/>
+            <img src="/img/patrocinadores/logo-07.webp" alt="Patrocinador" class="h-22 object-contain mx-auto"/>
+            <img src="/img/patrocinadores/logo-08.webp" alt="Patrocinador" class="h-22 object-contain mx-auto"/>
+            <img src="/img/patrocinadores/logo-09.webp" alt="Patrocinador" class="h-22 object-contain mx-auto"/>
+            <img src="/img/patrocinadores/logo-10.webp" alt="Patrocinador" class="h-22 object-contain mx-auto"/>
+            <img src="/img/patrocinadores/logo-11.webp" alt="Patrocinador" class="h-22 object-contain mx-auto"/>
+            <img src="/img/patrocinadores/logo-12.webp" alt="Patrocinador" class="h-22 object-contain mx-auto"/>
+            <img src="/img/patrocinadores/logo-13.webp" alt="Patrocinador" class="h-22 object-contain mx-auto"/>
+            <img src="/img/patrocinadores/logo-14.webp" alt="Patrocinador" class="h-22 object-contain mx-auto"/>
+            <img src="/img/patrocinadores/logo-15.webp" alt="Patrocinador" class="h-22 object-contain mx-auto"/>
+            <img src="/img/patrocinadores/logo-16.webp" alt="Patrocinador" class="h-22 object-contain mx-auto"/>
         </div>
     </section>
     <!--Boton flotante-->
     <a href="https://pay.grandezza.com.mx/b/cNi8wPaaKdeP3DL9yt4gg00" target="_blank"
        onclick="fbq('track', 'InitiateCheckout'); gtag('event', 'compra_iniciada', {event_category: 'boleto', event_label: 'grandezza_fest'}); gtag('event','conversion_event_begin_checkout')"
-       class="hidden fixed ctaButton bottom-6 right-6 z-50 bg-red-700 hover:bg-red-800 text-white font-semibold py-3 px-5 rounded-full shadow-lg transition-all duration-300 text-sm sm:text-base flex items-center gap-2">
+       class="hidden fixed ctaButton bottom-8 right-6 z-50 bg-amber-600 hover:bg-amber-700 text-white font-regular py-3 px-5 rounded-full shadow-lg transition-all duration-300 text-sm sm:text-base flex items-center gap-2">
         <!-- Ícono SVG de boleto -->
         <svg width="30px" height="30px" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
             <path fill="none" stroke="#ffffff" stroke-miterlimit="10" stroke-width="32"
@@ -363,7 +409,7 @@
                   x1="388.07"
                   y1="278.01" x2="371.56" y2="261.5"/>
         </svg>
-        Comprar Boletos
+        Preventa de Boletos
     </a>
 
     <!-- Incluye Alpine.js si no lo tienes -->
@@ -396,7 +442,7 @@
             <!-- Twitter / X -->
             <a href="https://twitter.com/intent/tweet?text=¡No te pierdas este evento!&url=https://grandezza.com.mx/fest"
                target="_blank"
-               class="bg-black hover:bg-gray-900 text-white p-3 rounded-full shadow-lg">
+               class="bg-black hover:bg-stone-900 text-white p-3 rounded-full shadow-lg">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
                     <path
                         d="M22.46 6c-.77.35-1.6.58-2.46.69a4.22 4.22 0 001.84-2.33 8.27 8.27 0 01-2.65 1.02A4.14 4.14 0 0015.5 4c-2.28 0-4.13 1.86-4.13 4.15 0 .33.03.66.1.97-3.44-.17-6.49-1.83-8.54-4.34a4.15 4.15 0 00-.56 2.09c0 1.44.73 2.7 1.84 3.44a4.08 4.08 0 01-1.87-.52v.05c0 2.01 1.42 3.69 3.3 4.07a4.2 4.2 0 01-1.85.07c.52 1.64 2.02 2.84 3.8 2.88A8.3 8.3 0 012 19.54a11.68 11.68 0 006.29 1.84c7.55 0 11.68-6.26 11.68-11.68l-.01-.53A8.18 8.18 0 0024 5.56a8.3 8.3 0 01-2.36.65 4.1 4.1 0 001.8-2.27z"/>
@@ -406,7 +452,7 @@
 
         <!-- Botón FAB principal -->
         <button @click="open = !open"
-                class="bg-amber-600 hover:bg-amber-700 text-white p-4 rounded-full shadow-xl focus:outline-none transition-all">
+                class="bg-amber-600 hover:bg-amber-600 text-white p-4 rounded-full shadow-xl focus:outline-none transition-all">
             <svg x-show="!open" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
                  viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/>
@@ -449,10 +495,10 @@
                 const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
                 countdownElement.innerHTML = `
-          <div><span>${days}</span><small>días</small></div>
-          <div><span>${hours.toString().padStart(2, '0')}</span><small>horas</small></div>
-          <div><span>${minutes.toString().padStart(2, '0')}</span><small>minutos</small></div>
-          <div><span>${seconds.toString().padStart(2, '0')}</span><small>segundos</small></div>
+          <div class="bg-amber-600"><span>${days}</span><small>días</small></div>
+          <div class="bg-amber-600"><span>${hours.toString().padStart(2, '0')}</span><small>horas</small></div>
+          <div class="bg-amber-600"><span>${minutes.toString().padStart(2, '0')}</span><small>minutos</small></div>
+          <div class="bg-amber-600"><span>${seconds.toString().padStart(2, '0')}</span><small>segundos</small></div>
         `;
             }
 
@@ -487,6 +533,40 @@
             }
         });
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 4,
+            spaceBetween: 10,
+            freeMode: true,
+            loop: true,
+            autoplay: {
+                delay: 2000,
+                disableOnInteraction: false,
+            },
+            lazy: true,
+
+            breakpoints: {
+                '@0.00': {
+                    slidesPerView: 2,
+                    spaceBetween: 10,
+                },
+                '@0.75': {
+                    slidesPerView: 3,
+                    spaceBetween: 10,
+                },
+                '@1.00': {
+                    slidesPerView: 5,
+                    spaceBetween: 30,
+                },
+                '@1.50': {
+                    slidesPerView: 6,
+                    spaceBetween: 40,
+                },
+            },
+        });
+    </script>
 
 @endpush
 @section('styles')
@@ -501,7 +581,7 @@
         }
 
         .countdown > div {
-            background: #bb8a69;
+
             padding: 1rem 1.5rem;
             border-radius: 0.75rem;
             text-align: center;
@@ -535,6 +615,27 @@
                 display: none;
             }
 
+        }
+
+        /* Swiper */
+        .swiper {
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
     </style>
 @endsection
