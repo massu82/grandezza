@@ -126,14 +126,9 @@
     <section class="bg-stone-800 py-25 sm:py-32">
         <div class="mx-auto max-w-7xl px-6 lg:px-8">
             <dl class="grid grid-cols-1 gap-x-8 gap-y-16 text-center lg:grid-cols-3">
+
                 <div class="mx-auto flex max-w-xs flex-col gap-y-4">
-                    <dt class="text-base/5 text-stone-400">Nacionales e internacionales de las mejores marcas</dt>
-                    <dd class="order-first text-2xl font-semibold tracking-tight text-white sm:text-3xl">Degustaciones
-                        de +100 etiquetas
-                    </dd>
-                </div>
-                <div class="mx-auto flex max-w-xs flex-col gap-y-4">
-                    <dt class="text-base/5 text-stone-400">Musica en vivo, DJ, lo mejor de la gastronomía y otras
+                    <dt class="text-base/5 text-stone-400">Música en vivo, DJ, lo mejor de la gastronomía y otras
                         sorpresas
                     </dt>
                     <dd class="order-first text-2xl font-semibold tracking-tight text-white sm:text-3xl">Vino, Música y
@@ -141,9 +136,17 @@
                     </dd>
                 </div>
                 <div class="mx-auto flex max-w-xs flex-col gap-y-4">
-                    <dt class="text-base/5 text-stone-400">El costo de Preventa es de $500, Taquilla $600</dt>
-                    <dd class="order-first text-2xl font-semibold tracking-tight text-white sm:text-3xl">Evento
-                        Exclusivo y Accesible
+                    <dt class="text-base/5 text-stone-400">Nacionales e internacionales de las mejores marcas</dt>
+                    <dd class="order-first text-2xl font-semibold tracking-tight text-white sm:text-3xl">Degustaciones
+                        de más de 100 etiquetas
+                    </dd>
+                </div>
+                <div class="mx-auto flex max-w-xs flex-col gap-y-4">
+                    <dt class="text-base/5 text-stone-400">Las catas se ofrecerán conforme a disponibilidad en los
+                        espacios asignados.
+                    </dt>
+                    <dd class="order-first text-2xl font-semibold tracking-tight text-white sm:text-3xl">Catas guiadas
+                        por expertos
                     </dd>
                 </div>
             </dl>
