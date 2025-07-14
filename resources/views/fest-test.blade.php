@@ -90,12 +90,12 @@
     <!-- Hero -->
     <section class="relative bg-cover bg-center h-screen flex flex-col justify-center items-center text-center"
              style="background-image: url('/img/hacienda.webp');">
-        <div class="absolute inset-0 bg-black bg-opacity-50"></div>
-        <div class="relative z-10 max-w-4xl px-8 py-12 rounded-xl bg-black bg-opacity-60">
-            <img src="/img/grandezza-fest.webp" alt="Grandezza Fest" class="img-fluid px-1 py-2 md:px-4 md:py-3 mt-4">
+        <div class="absolute inset-0 bg-black bg-opacity-30"></div>
+        <div class="relative z-10 max-w-4xl px-6 py-12 rounded-xl bg-black bg-opacity-40">
+            <img src="/img/grandezza-fest.webp" alt="Grandezza Fest" class="img-fluid px-2 py-2 md:px-6 md:py-3 mt-4">
             <!--<h1 class="text-5xl md:text-7xl font-extrabold mb-4 tracking-wide">Grandezza Fest 2025</h1>-->
             <p class="text-3xl md:text-6xl mb-6 font-alt">Así celebramos el Vino</p>
-            <img src="/img/hacienda.webp" alt="Hacienda San Juan Pueblilla" class="-mt-12 img-fluid">
+            <!--<img src="/img/hacienda.webp" alt="Hacienda San Juan Pueblilla" class="-mt-12 img-fluid">-->
             <p class="text-xl md:text-2xl mb-8 tracking-wide">2 de agosto · Hacienda San Juan Pueblilla · Zempoala,
                 Hidalgo</p>
 
