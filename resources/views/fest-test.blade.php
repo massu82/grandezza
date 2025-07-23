@@ -162,8 +162,6 @@
                 <div class="swiper-slide"><img src="/img/patrocinadores/logo-03.webp" alt="Patrocinador"/></div>
                 <div class="swiper-slide"><img src="/img/patrocinadores/logo-04.webp" alt="Patrocinador"/></div>
                 <div class="swiper-slide"><img src="/img/patrocinadores/logo-05.webp" alt="Patrocinador"/></div>
-                <div class="swiper-slide"><img src="/img/patrocinadores/logo-06.webp" alt="Patrocinador"/></div>
-                <div class="swiper-slide"><img src="/img/patrocinadores/logo-07.webp" alt="Patrocinador"/></div>
                 <div class="swiper-slide"><img src="/img/patrocinadores/logo-08.webp" alt="Patrocinador"/></div>
                 <div class="swiper-slide"><img src="/img/patrocinadores/logo-09.webp" alt="Patrocinador"/></div>
                 <div class="swiper-slide"><img src="/img/patrocinadores/logo-10.webp" alt="Patrocinador"/></div>
@@ -173,6 +171,13 @@
                 <div class="swiper-slide"><img src="/img/patrocinadores/logo-14.webp" alt="Patrocinador"/></div>
                 <div class="swiper-slide"><img src="/img/patrocinadores/logo-15.webp" alt="Patrocinador"/></div>
                 <div class="swiper-slide"><img src="/img/patrocinadores/logo-16.webp" alt="Patrocinador"/></div>
+                <div class="swiper-slide"><img src="/img/patrocinadores/logo-17.webp" alt="Patrocinador"/></div>
+                <div class="swiper-slide"><img src="/img/patrocinadores/logo-18.webp" alt="Patrocinador"/></div>
+                <div class="swiper-slide"><img src="/img/patrocinadores/logo-19.webp" alt="Patrocinador"/></div>
+                <div class="swiper-slide"><img src="/img/patrocinadores/logo-20.webp" alt="Patrocinador"/></div>
+                <div class="swiper-slide"><img src="/img/patrocinadores/logo-21.webp" alt="Patrocinador"/></div>
+                <div class="swiper-slide"><img src="/img/patrocinadores/logo-06.webp" alt="Patrocinador"/></div>
+                <div class="swiper-slide"><img src="/img/patrocinadores/logo-07.webp" alt="Patrocinador"/></div>
             </div>
         </div>
     </section>
@@ -183,10 +188,10 @@
         <div class="w-full max-w-4xl aspect-video rounded-xl overflow-hidden shadow-lg">
             <iframe class="w-full h-full"
                     id="video"
-                    src="https://www.youtube.com/embed/5HwWj7zwsu4?autoplay=1"
+                    src="https://www.youtube.com/embed/5HwWj7zwsu4"
                     title="Grandezza Fest 2025 - Reel"
                     frameborder="0"
-                    allow="autoplay; encrypted-media"
+                    allow="encrypted-media"
                     allowfullscreen>
             </iframe>
         </div>
@@ -374,8 +379,6 @@
             <img src="/img/patrocinadores/logo-02.webp" alt="Patrocinador" class="h-22 object-contain mx-auto"/>
             <img src="/img/patrocinadores/logo-03.webp" alt="Patrocinador" class="h-22 object-contain mx-auto"/>
             <img src="/img/patrocinadores/logo-04.webp" alt="Patrocinador" class="h-22 object-contain mx-auto"/>
-            <img src="/img/patrocinadores/logo-06.webp" alt="Patrocinador" class="h-22 object-contain mx-auto"/>
-            <img src="/img/patrocinadores/logo-07.webp" alt="Patrocinador" class="h-22 object-contain mx-auto"/>
             <img src="/img/patrocinadores/logo-08.webp" alt="Patrocinador" class="h-22 object-contain mx-auto"/>
             <img src="/img/patrocinadores/logo-09.webp" alt="Patrocinador" class="h-22 object-contain mx-auto"/>
             <img src="/img/patrocinadores/logo-10.webp" alt="Patrocinador" class="h-22 object-contain mx-auto"/>
@@ -385,6 +388,13 @@
             <img src="/img/patrocinadores/logo-14.webp" alt="Patrocinador" class="h-22 object-contain mx-auto"/>
             <img src="/img/patrocinadores/logo-15.webp" alt="Patrocinador" class="h-22 object-contain mx-auto"/>
             <img src="/img/patrocinadores/logo-16.webp" alt="Patrocinador" class="h-22 object-contain mx-auto"/>
+            <img src="/img/patrocinadores/logo-17.webp" alt="Patrocinador" class="h-22 object-contain mx-auto"/>
+            <img src="/img/patrocinadores/logo-18.webp" alt="Patrocinador" class="h-22 object-contain mx-auto"/>
+            <img src="/img/patrocinadores/logo-19.webp" alt="Patrocinador" class="h-22 object-contain mx-auto"/>
+            <img src="/img/patrocinadores/logo-20.webp" alt="Patrocinador" class="h-22 object-contain mx-auto"/>
+            <img src="/img/patrocinadores/logo-21.webp" alt="Patrocinador" class="h-22 object-contain mx-auto"/>
+            <img src="/img/patrocinadores/logo-06.webp" alt="Patrocinador" class="h-22 object-contain mx-auto"/>
+            <img src="/img/patrocinadores/logo-07.webp" alt="Patrocinador" class="h-22 object-contain mx-auto"/>
         </div>
     </section>
     <!--Boton flotante-->
