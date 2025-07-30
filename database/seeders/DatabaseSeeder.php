@@ -4,8 +4,7 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
 use App\Models\User;
-use Database\Seeders\CategoriasSeeder;
-use Database\Seeders\ProductoSeeder;
+use Database\Seeders\CataSeeder;
 
 
 class DatabaseSeeder extends Seeder
@@ -17,8 +16,7 @@ class DatabaseSeeder extends Seeder
     {
         // Llamar a otros seeders
         $this->call([
-            CategoriasSeeder::class,
-            ProductoSeeder::class,
+            CataSeeder::class,
         ]);
 
         // Crear un usuario manualmente
