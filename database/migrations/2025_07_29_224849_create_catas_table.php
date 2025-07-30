@@ -13,7 +13,10 @@ return new class extends Migration {
         Schema::create('catas', function (Blueprint $table) {
             $table->id();
             $table->string('titulo');
-            $table->text('descripcion')->nullable();
+            $table->string('salon');
+            $table->string('logo')->nullable();
+            $table->string('expositor');
+            $table->text('descripcion');
             $table->dateTime('fecha_hora');
             $table->unsignedInteger('capacidad');
             $table->timestamps();

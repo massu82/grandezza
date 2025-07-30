@@ -17,26 +17,13 @@ class CataSeeder extends Seeder
     {
         Cata::insert([
             [
-                'titulo' => 'Cata de Vinos Tintos',
-                'descripcion' => 'Una selección de los mejores vinos tintos del país.',
-                'fecha_hora' => Carbon::now()->addDays(1)->setTime(17, 0),
-                'capacidad' => 20,
-                'created_at' => now(),
-                'updated_at' => now(),
-            ],
-            [
-                'titulo' => 'Cata de Mezcales Artesanales',
-                'descripcion' => 'Explora sabores únicos de distintas regiones de México.',
-                'fecha_hora' => Carbon::now()->addDays(2)->setTime(18, 30),
-                'capacidad' => 25,
-                'created_at' => now(),
-                'updated_at' => now(),
-            ],
-            [
-                'titulo' => 'Cata de Cervezas Locales',
-                'descripcion' => 'Descubre el mundo cervecero con productores locales.',
-                'fecha_hora' => Carbon::now()->addDays(3)->setTime(16, 0),
-                'capacidad' => 30,
+                'titulo' => 'La Redonda',
+                'descripcion' => '<ul class="list-disc list-inside text-xs"><li>ROSADO SEMI SECO<li>BLANCO DULCE<li>NOSOTROS SEMI DULCE</ul>',
+                'salon' => 'Amarillo',
+                'logo' => '',
+                'expositor' => 'Adrian Roa',
+                'fecha_hora' => Carbon::create(2025,8,2,13),
+                'capacidad' => 24,
                 'created_at' => now(),
                 'updated_at' => now(),
             ]
