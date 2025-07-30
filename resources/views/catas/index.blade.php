@@ -1,6 +1,17 @@
 @extends('layouts.cata')
-@section('title','Catas de vino')
+@section('title','Elije una Cata')
 @section('content')
+    @if (session('error'))
+        <div class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded mb-4">
+            {{ session('error') }}
+        </div>
+    @endif
+
+    @if (session('success'))
+        <div class="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded mb-4">
+            {{ session('success') }}
+        </div>
+    @endif
     @foreach($catas as $cata)
         <div class="divide-y divide-gray-200 overflow-hidden rounded-lg bg-white shadow mb-4">
             <div class="px-4 py-5 sm:px-6 bg-stone-800">
@@ -18,8 +29,9 @@
                             class="font-bold text-slate-700">{{ $cata->salon }}</span></li>
                     <li>Temas: <span
                             class="font-bold text-slate-700">{!!  $cata->descripcion !!}</span></li>
-                    <li>Fecha: <span
-                            class="font-bold text-slate-700">{{ $cata->fecha_hora }}</span></li>
+                    <li>Horario: <span
+                            class="font-bold text-slate-700">{{ $cata->fecha_hora->format('H:i') }}</span> horas
+                    </li>
                     <li>Expositor: <span
                             class="font-bold text-slate-700">{{ $cata->expositor }}</span></li>
                     <li>Registrados: <span
@@ -35,15 +47,5 @@
             </div>
         </div>
     @endforeach
-    @if (session('error'))
-        <div class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded mb-4">
-            {{ session('error') }}
-        </div>
-    @endif
 
-    @if (session('success'))
-        <div class="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded mb-4">
-            {{ session('success') }}
-        </div>
-    @endif
 @endsection

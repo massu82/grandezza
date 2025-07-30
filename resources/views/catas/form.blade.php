@@ -1,17 +1,32 @@
 @extends('layouts.cata')
 @section('title')
-    {{ $cata->titulo }}
+    @if($cata->logo)
+        <img src="/img/patrocinadores/{{ $cata->logo }}.webp" alt="{{ $cata->titulo }}"
+             class="img-fluid h-24 -my-4">
+    @else
+        <h1 class="text-3xl font-bold text-white">{{$cata->titulo}}</h1>
+    @endif
+
 @endsection
 @section('content')
+    <div class="grid grid-cols-1 gap-x-8 gap-y-6 mb-8">
+        <ul class="list-none text-slate-800 text-xs md:text-sm">
+            <li>Cata: <span class="font-bold">{{$cata->titulo}}</span></li>
+            <li>Salón: <span class="font-bold">{{$cata->salon}}</span></li>
+            <li>Horario: <span class="font-bold">{{ $cata->fecha_hora->format('H:i') }}</span> horas</li>
+            <li>Expositor: <span class="font-bold">{{$cata->expositor}}</span></li>
+
+        </ul>
+        <div class="alert"><h3 class="font-sans font-bold text-stone-800 alert">Sólo puede registrar una sola Cata por asistente</h3></div>
+    </div>
 
     <form action="{{ route('catas.registrar', $cata->id) }}" method="POST"
-          class="mx-auto mt-16 max-w-xl sm:mt-20">
+          class="">
         @csrf
-        <legend class="text-base font-semibold text-stone-900 mb-4">Sólo puede registrar una cata por asistente</legend>
         <div class="grid grid-cols-1 gap-x-8 gap-y-6">
 
             <div class="sm:col-span-2">
-                <input name="nombre" placeholder="Nombre" required
+                <input name="nombre" placeholder="Nombre Completo" required
                        class="block w-full rounded-md bg-white px-3.5 py-2 text-base text-stone-900 outline outline-1 outline-stone-300 placeholder:text-stone-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-amber-600"/>
             </div>
             <div class="sm:col-span-2">
