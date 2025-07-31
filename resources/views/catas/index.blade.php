@@ -1,5 +1,7 @@
 @extends('layouts.cata')
 @section('title','Elije una Cata')
+@section('mensaje','**"Gracias por ser parte de Grandezza Fest 2025. Debido a la cantidad de asistentes, solo es posible registrarse a una cata. ¡Gracias por tu comprensión!"**
+')
 @section('content')
     @if (session('error'))
         <div class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded mb-4">

@@ -16,8 +16,9 @@ class DatabaseSeeder extends Seeder
     {
         // Llamar a otros seeders
         $this->call([
-            CataSeeder::class,
+            CataSeeder::class
         ]);
+
 
         // Crear un usuario manualmente
         User::factory()->create([
