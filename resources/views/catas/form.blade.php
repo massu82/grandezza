@@ -17,7 +17,7 @@
             <li>Expositor: <span class="font-bold">{{$cata->expositor}}</span></li>
 
         </ul>
-        <div class="alert"><h3 class="font-sans font-bold text-stone-800 alert">Sólo puede registrar una sola Cata por asistente</h3></div>
+        <div class=""><h3 class="font-sans font-semibold text-stone-800 alert">Recuerde que cada asistente puede registrarse únicamente a una cata.</h3></div>
     </div>
 
     <form action="{{ route('catas.registrar', $cata->id) }}" method="POST"
@@ -26,11 +26,11 @@
         <div class="grid grid-cols-1 gap-x-8 gap-y-6">
 
             <div class="sm:col-span-2">
-                <input name="nombre" placeholder="Nombre Completo" required
+                <input name="nombre" placeholder="Nombre Completo*" required
                        class="block w-full rounded-md bg-white px-3.5 py-2 text-base text-stone-900 outline outline-1 outline-stone-300 placeholder:text-stone-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-amber-600"/>
             </div>
             <div class="sm:col-span-2">
-                <input name="correo" type="email" placeholder="Correo" required
+                <input name="correo" id="correo" type="email" placeholder="Correo*" required
                        class="block w-full rounded-md bg-white px-3.5 py-2 text-base text-stone-900 outline outline-1 outline-stone-300 placeholder:text-stone-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-amber-600"/>
             </div>
             <div class="sm:col-span-2">

@@ -7,6 +7,7 @@ use Illuminate\Support\Facades\Mail;
 use App\Models\Cata;
 use App\Mail\ConfirmacionRegistroCata;
 use App\Mail\NotificarAdminCata;
+use Illuminate\Support\Facades\DB;
 
 class CataController extends Controller
 {
@@ -50,4 +51,22 @@ class CataController extends Controller
 
         return redirect()->route('catas')->with('success', 'Registro exitoso. Revisa tu correo.');
     }
+
+    // Obtén todos los registros agrupados por fecha_hora y salón
+    public function registrosAgrupados()
+    {
+        $registros = DB::table('registro_catas')
+            ->join('catas', 'registro_catas.cata_id', '=', 'catas.id')
+            ->select('registro_catas.*', 'catas.fecha_hora', 'catas.salon', 'catas.titulo', 'catas.expositor', 'catas.capacidad')
+            ->orderBy('catas.fecha_hora')
+            ->orderBy('catas.salon')
+            ->get()
+            ->groupBy(function ($item) {
+                return \Carbon\Carbon::parse($item->fecha_hora)->format('H:i') . ' horas, salón: ' . $item->salon . ', expone ' . $item->expositor . ', Capacidad; ' . $item->capacidad . ' personas';
+            });
+
+        return view('catas.salon', compact('registros'));
+    }
+
+
 }

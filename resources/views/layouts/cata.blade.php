@@ -3,7 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex, nofollow">
     <title>Grandezza Fest 2025 | Catas</title>
+    <link rel="icon" href="{{asset('/img/favicon.png')}}" type="image/png"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Ephesis&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <!-- Scripts -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
@@ -28,8 +35,8 @@
         </nav>
         <header class="py-10">
             <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-                <h1 class="text-3xl font-bold tracking-tight text-amber-50 mb-2">@yield('title')</h1>
-                <p class="text-lg font-semibold -tracking-normal text-amber-200">@yield('mensaje')</p>
+                <h1 class="text-3xl font-semibold tracking-tight text-amber-50 mb-2">@yield('title')</h1>
+                <p class="text-lg font-normal -tracking-normal text-amber-200">@yield('mensaje')</p>
             </div>
         </header>
     </div>

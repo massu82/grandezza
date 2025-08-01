@@ -15,6 +15,7 @@ Route::controller(PageController::class)->group(function () {
 Route::get('/catas', [CataController::class, 'index'])->name('catas');
 Route::get('/catas/{cata}/registro', [CataController::class, 'form'])->name('catas.registro');
 Route::post('/catas/{cata}/registro', [CataController::class, 'registrar'])->name('catas.registrar');
+Route::get('/catas/salones', [CataController::class, 'registrosAgrupados'])->name('catas.salones');
 
 Route::get('/dashboard', function () {
     return view('dashboard');
