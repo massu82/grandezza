@@ -14,14 +14,4 @@ class PageController extends Controller
         //return view('fest-test', compact('productos'));
         return redirect('fest');
     }
-
-    public function fest()
-    {
-        return view('fest-test');
-    }
-
-    public function gracias()
-    {
-        return view('pages.gracias');
-    }
 }

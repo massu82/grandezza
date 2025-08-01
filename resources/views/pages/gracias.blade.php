@@ -5,6 +5,7 @@
 @section('image','https://grandezza.com.mx/img/grandezza-fest-2025.jpg')
 @section('url','https://grandezza.com.mx/gracias')
 @push('heads')
+    <meta name="robots" content="noindex, nofollow">
     <!-- Google tag (gtag.js) event -->
     <script>
         window.onload = function () {
@@ -28,7 +29,8 @@
                 <p class="text-lg mb-6 text-stone-300">
                     Tu pago ha sido procesado exitosamente. ¡Nos vemos en <span class="font-semibold text-white">Grandezza Fest 2025</span>!
                 </p>
-                <p class="text-sm mb-6 font-semibold text-slate-400">A la brevedad tus boletos serán enviados a tu correo.</p>
+                <p class="text-sm mb-6 font-semibold text-slate-400">A la brevedad tus boletos serán enviados a tu
+                    correo.</p>
 
                 <!-- Datos del pedido -->
                 <div class="bg-stone-700/50 p-4 rounded-lg text-left mb-6 text-sm text-stone-300">
@@ -40,7 +42,7 @@
                 </div>
 
                 <!-- Botón CTA -->
-                <a href="https://grandezza.com.mx"
+                <a href="{{ route('inicio') }}"
                    class="inline-flex items-center px-6 py-3 bg-slate-600 text-white rounded-full hover:bg-slate-700 transition">
                     Ir al sitio
                     <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">

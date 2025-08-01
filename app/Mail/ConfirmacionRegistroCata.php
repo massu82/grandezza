@@ -14,7 +14,7 @@ use App\Models\RegistroCata;
 class ConfirmacionRegistroCata extends Mailable {
     public function __construct(public Cata $cata, public RegistroCata $registro) {}
     public function build() {
-        return $this->subject('Confirmación de registro')
+        return $this->subject('Registro confirmado a Cata')
             ->view('emails.confirmacion-cata');
     }
 }

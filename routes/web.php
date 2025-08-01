@@ -8,15 +8,21 @@ use App\Http\Controllers\CataController;
 
 Route::controller(PageController::class)->group(function () {
     Route::get('/', 'index')->name('inicio');
-    Route::get('/fest', 'fest')->name('fest');
     Route::get('/gracias', 'gracias')->name('gracias');
 });
+//Grandezza Fest
+Route::controller(CataController::class)->group(function () {
+    Route::get('/fest', 'fest')->name('fest');
+    Route::get('/gracias', 'gracias')->name('gracias');
+    Route::get('/catas', 'index')->name('catas');
+    Route::get('/catas/{cata}/registro', 'form')->name('catas.registro');
+    Route::post('/catas/{cata}/registro', 'registrar')->name('catas.registrar');
+    Route::get('/catas/salones', 'registrosAgrupados')->name('catas.salones');
+    Route::get('/catas/admin', 'registrosAgrupadosAdmin')->name('catas.admin');
+    Route::delete('/catas/{id}', [CataController::class, 'destroy'])->name('catas.destroy');
+});
 
-Route::get('/catas', [CataController::class, 'index'])->name('catas');
-Route::get('/catas/{cata}/registro', [CataController::class, 'form'])->name('catas.registro');
-Route::post('/catas/{cata}/registro', [CataController::class, 'registrar'])->name('catas.registrar');
-Route::get('/catas/salones', [CataController::class, 'registrosAgrupados'])->name('catas.salones');
-
+//Dashboard
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
