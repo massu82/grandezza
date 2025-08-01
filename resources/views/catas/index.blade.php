@@ -21,7 +21,7 @@
                     <img src="/img/patrocinadores/{{ $cata->logo }}.webp" alt="{{ $cata->titulo }}"
                          class="img-fluid h-24 -my-4">
                 @else
-                    <h1 class="text-3xl font-bold text-white">{{$cata->titulo}}</h1>
+                    <h1 class="text-2xl font-semibold text-white">{{$cata->titulo}}</h1>
                 @endif
             </div>
             <div class="px-4 py-5 sm:p-6 align-content-center">
