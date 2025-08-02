@@ -5,6 +5,11 @@
 @section('image','https://grandezza.com.mx/img/banner-grandezza.jpg')
 @section('url','https://grandezza.com.mx/fest')
 @push('heads')
+    <script>
+        window.onload = function() {
+            alert('La venta de boletos para este evento se llevará a cabo diréctamente en la taquilla del evento');
+        };
+    </script>
     <!-- Opcional pero recomendado -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Grandezza Fest 2025 – Música, vino y naturaleza">
@@ -105,7 +110,7 @@
 
             </div>
 
-            <a href="https://pay.grandezza.com.mx/b/cNi8wPaaKdeP3DL9yt4gg00" target="_blank"
+            <a href="#" target="_blank"
                onclick="fbq('track', 'InitiateCheckout'); gtag('event', 'compra_iniciada', {event_category: 'boleto', event_label: 'grandezza_fest'}); gtag('event','conversion_event_begin_checkout')"
                class="inline-block bg-amber-600 hover:bg-amber-600 text-white px-10 py-4 rounded-full text-lg md:text-xl shadow-lg transition">
                 Preventa de Boletos
@@ -206,7 +211,7 @@
             música en vivo, gastronomía de primer nivel y un ambiente único en la Hacienda San Juan Pueblilla.
             Grandezza, tu tienda de vinos y licores favorita, te invita a esta gran celebración.
         </p>
-        <a href="https://pay.grandezza.com.mx/b/cNi8wPaaKdeP3DL9yt4gg00" target="_blank"
+        <a href="#" target="_blank"
            onclick="fbq('track', 'InitiateCheckout'); gtag('event', 'compra_iniciada', {event_category: 'boleto', event_label: 'grandezza_fest'}); gtag('event','conversion_event_begin_checkout')"
            class="inline-block bg-amber-600 text-white px-12 py-5 rounded-full font-regular text-large md:text-2xl shadow-lg hover:bg-amber-700 transition">
             Preventa de Boletos
@@ -398,7 +403,7 @@
         </div>
     </section>
     <!--Boton flotante-->
-    <a href="https://pay.grandezza.com.mx/b/cNi8wPaaKdeP3DL9yt4gg00" target="_blank"
+    <a href="#" target="_blank"
        onclick="fbq('track', 'InitiateCheckout'); gtag('event', 'compra_iniciada', {event_category: 'boleto', event_label: 'grandezza_fest'}); gtag('event','conversion_event_begin_checkout')"
        class="hidden fixed ctaButton bottom-8 right-6 z-50 bg-amber-600 hover:bg-amber-700 text-white font-regular py-3 px-5 rounded-full shadow-lg transition-all duration-300 text-sm sm:text-base flex items-center gap-2">
         <!-- Ícono SVG de boleto -->
