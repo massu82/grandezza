@@ -13,13 +13,13 @@ Route::controller(PageController::class)->group(function () {
 //Grandezza Fest
 Route::controller(CataController::class)->group(function () {
     Route::get('/fest', 'fest')->name('fest');
-    Route::get('/gracias', 'gracias')->name('gracias');
-    Route::get('/catas', 'index')->name('catas');
-    Route::get('/catas/{cata}/registro', 'form')->name('catas.registro');
-    Route::post('/catas/{cata}/registro', 'registrar')->name('catas.registrar');
-    Route::get('/catas/salones', 'registrosAgrupados')->name('catas.salones');
-    Route::get('/catas/admin', 'registrosAgrupadosAdmin')->name('catas.admin');
-    Route::delete('/catas/{id}', [CataController::class, 'destroy'])->name('catas.destroy');
+    //Route::get('/gracias', 'gracias')->name('gracias');
+    //Route::get('/catas', 'index')->name('catas');
+    //Route::get('/catas/{cata}/registro', 'form')->name('catas.registro');
+    //Route::post('/catas/{cata}/registro', 'registrar')->name('catas.registrar');
+    //Route::get('/catas/salones', 'registrosAgrupados')->name('catas.salones');
+    //Route::get('/catas/admin', 'registrosAgrupadosAdmin')->name('catas.admin');
+    //Route::delete('/catas/{id}', [CataController::class, 'destroy'])->name('catas.destroy');
 });
 
 //Dashboard
