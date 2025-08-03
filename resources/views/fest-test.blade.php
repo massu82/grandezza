@@ -10,7 +10,6 @@
             alert('La venta de boletos para este evento se llevará a cabo diréctamente en la taquilla del evento');
         };
     </script>-->
-    <!-- Opcional pero recomendado -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Grandezza Fest 2025 – Música, vino y naturaleza">
     <meta name="twitter:description"
@@ -101,8 +100,7 @@
             <!--<h1 class="text-5xl md:text-7xl font-extrabold mb-4 tracking-wide">Grandezza Fest 2025</h1>-->
             <p class="text-3xl md:text-6xl mb-6 font-alt">Así celebramos el Vino</p>
             <!--<img src="/img/hacienda.webp" alt="Hacienda San Juan Pueblilla" class="-mt-12 img-fluid">-->
-            <p class="text-xl md:text-2xl mb-8 tracking-wide">2 de agosto · Hacienda San Juan Pueblilla · Zempoala,
-                Hidalgo</p>
+            <p class="text-xl md:text-2xl mb-8 tracking-wide">Cuarta edicón de Grandezza Fest 2026</p>
 
             <!-- Countdown -->
             <div id="countdown" class="countdown mb-8"
@@ -157,7 +155,7 @@
             </dl>
         </div>
     </section>
-    <!-- Patrocinadores -->
+    <!-- Patrocinadores
     <section class="py-16 px-6 bg-stone-800 dark:bg-black">
         <h2 class="text-4xl md:text-5xl mb-6 tracking-wide font-alt text-center">Patrocinadores</h2>
         <div class="swiper mySwiper max-w-7xl">
@@ -185,7 +183,7 @@
                 <div class="swiper-slide"><img src="/img/patrocinadores/logo-07.webp" alt="Patrocinador"/></div>
             </div>
         </div>
-    </section>
+    </section>-->
 
 
     <!-- Video Promocional -->
@@ -205,7 +203,7 @@
 
     <!-- Call to Action / Boletos -->
     <section id="boletos" class="py-20 px-6 bg-stone-900 text-center">
-        <h2 class="text-4xl md:text-5xl mb-6 tracking-wide font-alt">Tercera edición de Grandezza Fest</h2>
+        <h2 class="text-4xl md:text-5xl mb-6 tracking-wide font-alt">Cuarta edición de Grandezza Fest</h2>
         <p class="text-sm md:text-lg max-w-4xl mx-auto mb-8 text-stone-200">
             Descubre el mejor evento dedicado al vino y los licores en un entorno espectacular. Vive catas exclusivas,
             música en vivo, gastronomía de primer nivel y un ambiente único en la Hacienda San Juan Pueblilla.
@@ -218,7 +216,7 @@
         </a>
     </section>
 
-    <section id="faq" class="bg-white dark:bg-stone-800 py-16 px-4 sm:px-8 lg:px-24">
+    <!--<section id="faq" class="bg-white dark:bg-stone-800 py-16 px-4 sm:px-8 lg:px-24">
         <div class="max-w-5xl mx-auto">
             <h2 class="text-4xl md:text-5xl mb-6 tracking-wide font-alt text-center">Preguntas Frecuentes</h2>
             <div class="space-y-6">
@@ -308,9 +306,9 @@
 
             </div>
         </div>
-    </section>
+    </section>-->
 
-    <!-- Mapa -->
+    <!-- Mapa
     <section class="py-20 px-6 bg-stone-900">
         <h2 class="text-4xl md:text-5xl mb-6 tracking-wide font-alt text-center">¿Cómo llegar?</h2>
         <p class="text-xl md:text-2xl text-center tracking-wide">Hacienda San Juan Pueblilla · Zempoala,
@@ -328,8 +326,8 @@
                 title="Mapa de Hacienda San Juan Pueblilla"
             ></iframe>
         </div>
-    </section>
-    <!-- Hospedaje -->
+    </section>-->
+    <!-- Hospedaje
     <section class="py-20 px-6 bg-stone-800">
         <h2 class="text-4xl md:text-5xl mb-6 tracking-wide font-alt text-center">Hospedaje Cercano</h2>
         <p class="text-center max-w-3xl mx-auto mb-12 text-stone-300 text-lg">
@@ -374,8 +372,8 @@
                     ubicación</a>
             </li>
         </ul>
-    </section>
-    <!-- Patrocinadores -->
+    </section>-->
+    <!-- Patrocinadores
     <section class="py-16 px-6 bg-stone-800 dark:bg-black">
         <h2 class="text-4xl md:text-5xl mb-6 tracking-wide font-alt text-center">Patrocinadores</h2>
         <div class="grid grid-cols-3 md:grid-cols-5 lg:grid-cols-6 gap-6 items-center max-w-8xl mx-auto">
@@ -401,7 +399,7 @@
             <img src="/img/patrocinadores/logo-06.webp" alt="Patrocinador" class="h-22 object-contain mx-auto"/>
             <img src="/img/patrocinadores/logo-07.webp" alt="Patrocinador" class="h-22 object-contain mx-auto"/>
         </div>
-    </section>
+    </section>-->
     <!--Boton flotante-->
     <a href="#" target="_blank"
        onclick="fbq('track', 'InitiateCheckout'); gtag('event', 'compra_iniciada', {event_category: 'boleto', event_label: 'grandezza_fest'}); gtag('event','conversion_event_begin_checkout')"
@@ -498,7 +496,7 @@
                 const distance = eventDate - now;
 
                 if (distance < 0) {
-                    countdownElement.innerHTML = '<p class="text-2xl font-bold text-stone-600">¡El evento ya comenzó!</p>';
+                    countdownElement.innerHTML = '<!--<p class="text-2xl font-bold text-stone-600 text-white">¡El evento ya comenzó!</p>-->';
                     clearInterval(interval);
                     return;
                 }
